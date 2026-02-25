@@ -1,0 +1,14 @@
+{
+  "model_name": "main_dqn_proposed_reward_v2_alpha55_omega16",
+  "timestamp": "2026-02-25 14:56:07",
+  "weights_path": "utils/checkpoints/main_dqn_proposed_reward_v2_alpha55_omega16.weights.h5",
+  "metrics": {
+    "episode": 1,
+    "alpha": 0.55,
+    "omega": 16,
+    "method": "proposed",
+    "variant_id": "reward_v2",
+    "roi": 3.6043052099056774,
+    "sr": -0.5339621459408408
+  }
+}

@@ -1,0 +1,7 @@
+study,roi,sr
+"DNA-S (Betancourt et al., 2021)",>24%,N/A
+"SharpeD-DQN (Lucarelli et al., 2019)",26.14%,N/A
+"Double Q-network + Boltzmann (Bu et al., 2018)",27.87%,N/A
+"DQN (Theate et al., 2021)",29.4%,N/A
+"TD3 (Majidi et al., 2022)",57.5%,1.53
+M-DQN (this run),runtime_output,runtime_output

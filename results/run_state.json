@@ -1,0 +1,284 @@
+{
+  "jobs": {
+    "trade": {
+      "elapsed_sec": 341.31018847972155,
+      "budget_sec": 10800.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 77.699951171875,
+      "checkpoint_path": "utils/checkpoints/trade_dqn.weights.h5",
+      "episodes_completed": 5,
+      "metrics": {
+        "train_reward": 77.699951171875
+      },
+      "job_id": "trade",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T20:47:50.238726Z",
+      "finished_at": "2026-02-25T20:53:31.548927Z",
+      "is_deadline_eligible": true
+    },
+    "pred_paper": {
+      "elapsed_sec": 405.027776628267,
+      "budget_sec": 14400.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": -2966.6940163870945,
+      "checkpoint_path": "utils/checkpoints/predictive_dqn.weights.h5",
+      "episodes_completed": 5,
+      "metrics": {
+        "train_reward": -2966.6940163870945,
+        "output_path": "data/processed/x2_price_predictions.csv"
+      },
+      "job_id": "pred_paper",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T20:53:31.709963Z",
+      "finished_at": "2026-02-25T21:00:16.737759Z",
+      "is_deadline_eligible": true
+    },
+    "pred_continuous": {
+      "elapsed_sec": 0.2872746209613979,
+      "budget_sec": 14400.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": -9998.01171875,
+      "checkpoint_path": "utils/checkpoints/predictive_dqn_continuous.weights.h5",
+      "episodes_completed": 5,
+      "metrics": {
+        "train_reward": -9998.01171875,
+        "output_path": "data/processed/x2_price_predictions_continuous.csv"
+      },
+      "job_id": "pred_continuous",
+      "variant_id": "continuous",
+      "started_at": "2026-02-25T21:00:16.835394Z",
+      "finished_at": "2026-02-25T21:00:17.122681Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a30_o8": {
+      "elapsed_sec": 207.80021573184058,
+      "budget_sec": 960.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega8.weights.h5",
+      "episodes_completed": 3,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a30_o8",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T21:00:17.854061Z",
+      "finished_at": "2026-02-25T21:03:45.654272Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a30_o8": {
+      "elapsed_sec": 141.9248389150016,
+      "budget_sec": 960.0,
+      "stopped_reason": "deadline_freeze",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega8.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a30_o8",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T21:03:45.839231Z",
+      "finished_at": "2026-02-25T21:06:07.764065Z",
+      "is_deadline_eligible": false
+    },
+    "main_proposed_dueling_double_a30_o8": {
+      "elapsed_sec": 261.17891696374863,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega8.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "dueling_double"
+      },
+      "job_id": "main_proposed_dueling_double_a30_o8",
+      "variant_id": "dueling_double",
+      "started_at": "2026-02-25T21:35:48.049868Z",
+      "finished_at": "2026-02-25T21:40:09.228786Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_predictive_continuous_a30_o8": {
+      "elapsed_sec": 141.36428596358746,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega8.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "predictive_continuous"
+      },
+      "job_id": "main_proposed_predictive_continuous_a30_o8",
+      "variant_id": "predictive_continuous",
+      "started_at": "2026-02-25T21:40:09.310246Z",
+      "finished_at": "2026-02-25T21:42:30.674529Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a30_o16": {
+      "elapsed_sec": 140.3126489650458,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": -10.874156102294917,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega16.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": -10.874156102294917,
+        "sr": 0.0,
+        "trades": 113.0,
+        "final_cash": 891258.4389770508,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a30_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T21:42:30.768554Z",
+      "finished_at": "2026-02-25T21:44:51.081200Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a30_o16": {
+      "elapsed_sec": 141.08327913703397,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega16.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a30_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T21:44:51.192380Z",
+      "finished_at": "2026-02-25T21:47:12.275660Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_dueling_double_a30_o16": {
+      "elapsed_sec": 393.8445151881315,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega16.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "dueling_double"
+      },
+      "job_id": "main_proposed_dueling_double_a30_o16",
+      "variant_id": "dueling_double",
+      "started_at": "2026-02-25T21:47:12.426571Z",
+      "finished_at": "2026-02-25T21:53:46.271084Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_predictive_continuous_a30_o16": {
+      "elapsed_sec": 304.8992321882397,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega16.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "predictive_continuous"
+      },
+      "job_id": "main_proposed_predictive_continuous_a30_o16",
+      "variant_id": "predictive_continuous",
+      "started_at": "2026-02-25T21:53:46.459087Z",
+      "finished_at": "2026-02-25T21:58:51.358316Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a30_o24": {
+      "elapsed_sec": 294.2440971448086,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": -5.087442371582088,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega24.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": -5.087442371582088,
+        "sr": -0.4108976784675681,
+        "trades": 292.0,
+        "final_cash": 949125.5762841791,
+        "alpha": 0.3,
+        "omega": 24,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a30_o24",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T21:58:51.552205Z",
+      "finished_at": "2026-02-25T22:03:45.796300Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a30_o24": {
+      "elapsed_sec": 306.92897664615884,
+      "budget_sec": 480.0,
+      "stopped_reason": "episode_cap",
+      "best_metric": 0.0,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega24.weights.h5",
+      "episodes_completed": 2,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 24,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a30_o24",
+      "variant_id": "paper",
+      "started_at": "2026-02-25T22:03:45.994441Z",
+      "finished_at": "2026-02-25T22:08:52.923415Z",
+      "is_deadline_eligible": true
+    }
+  }
+}

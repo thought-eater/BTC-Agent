@@ -1,0 +1,684 @@
+{
+  "nodes": {
+    "prep": {
+      "status": "completed",
+      "updated_at": "2026-02-25T20:41:48.486616Z",
+      "outputs": [
+        "data/processed/btc_price_clean.csv",
+        "data/processed/tweet_sentiment_scores.csv",
+        "data/processed/integrated_base.csv"
+      ],
+      "metadata": {
+        "stage": "prep",
+        "result": {
+          "rows": 36120
+        }
+      }
+    },
+    "trade": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:00:17.123271Z",
+      "outputs": [
+        "data/processed/x1_trade_recommendations.csv"
+      ],
+      "metadata": {
+        "result": {
+          "elapsed_sec": 341.31018847972155,
+          "budget_sec": 10800.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 77.699951171875,
+          "checkpoint_path": "utils/checkpoints/trade_dqn.weights.h5",
+          "episodes_completed": 5,
+          "metrics": {
+            "train_reward": 77.699951171875
+          },
+          "job_id": "trade",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T20:47:50.238726Z",
+          "finished_at": "2026-02-25T20:53:31.548927Z",
+          "is_deadline_eligible": true
+        },
+        "variant_id": "paper",
+        "method": "n/a"
+      }
+    },
+    "pred_paper": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:00:17.123699Z",
+      "outputs": [
+        "data/processed/x2_price_predictions.csv"
+      ],
+      "metadata": {
+        "result": {
+          "elapsed_sec": 405.027776628267,
+          "budget_sec": 14400.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": -2966.6940163870945,
+          "checkpoint_path": "utils/checkpoints/predictive_dqn.weights.h5",
+          "episodes_completed": 5,
+          "metrics": {
+            "train_reward": -2966.6940163870945,
+            "output_path": "data/processed/x2_price_predictions.csv"
+          },
+          "job_id": "pred_paper",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T20:53:31.709963Z",
+          "finished_at": "2026-02-25T21:00:16.737759Z",
+          "is_deadline_eligible": true
+        },
+        "variant_id": "paper",
+        "method": "n/a"
+      }
+    },
+    "pred_continuous": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:00:17.124174Z",
+      "outputs": [
+        "data/processed/x2_price_predictions_continuous.csv"
+      ],
+      "metadata": {
+        "result": {
+          "elapsed_sec": 0.2872746209613979,
+          "budget_sec": 14400.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": -9998.01171875,
+          "checkpoint_path": "utils/checkpoints/predictive_dqn_continuous.weights.h5",
+          "episodes_completed": 5,
+          "metrics": {
+            "train_reward": -9998.01171875,
+            "output_path": "data/processed/x2_price_predictions_continuous.csv"
+          },
+          "job_id": "pred_continuous",
+          "variant_id": "continuous",
+          "started_at": "2026-02-25T21:00:16.835394Z",
+          "finished_at": "2026-02-25T21:00:17.122681Z",
+          "is_deadline_eligible": true
+        },
+        "variant_id": "continuous",
+        "method": "n/a"
+      }
+    },
+    "main_classic_paper_a30_o8": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:03:45.673913Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_classic_paper_alpha30_omega8.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "classic",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 207.80021573184058,
+          "budget_sec": 960.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega8.weights.h5",
+          "episodes_completed": 3,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 8,
+            "method": "classic",
+            "variant_id": "paper"
+          },
+          "job_id": "main_classic_paper_a30_o8",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T21:00:17.854061Z",
+          "finished_at": "2026-02-25T21:03:45.654272Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_paper_a30_o8": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:06:07.778561Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega8.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 141.9248389150016,
+          "budget_sec": 960.0,
+          "stopped_reason": "deadline_freeze",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega8.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 8,
+            "method": "proposed",
+            "variant_id": "paper"
+          },
+          "job_id": "main_proposed_paper_a30_o8",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T21:03:45.839231Z",
+          "finished_at": "2026-02-25T21:06:07.764065Z",
+          "is_deadline_eligible": false
+        }
+      }
+    },
+    "main_proposed_dueling_double_a30_o8": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:40:09.240581Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega8.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "dueling_double",
+        "branch": "improved",
+        "result": {
+          "elapsed_sec": 261.17891696374863,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega8.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 8,
+            "method": "proposed",
+            "variant_id": "dueling_double"
+          },
+          "job_id": "main_proposed_dueling_double_a30_o8",
+          "variant_id": "dueling_double",
+          "started_at": "2026-02-25T21:35:48.049868Z",
+          "finished_at": "2026-02-25T21:40:09.228786Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_predictive_continuous_a30_o8": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:42:30.689895Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega8.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 8,
+        "method": "proposed",
+        "variant_id": "predictive_continuous",
+        "branch": "improved",
+        "result": {
+          "elapsed_sec": 141.36428596358746,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega8.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 8,
+            "method": "proposed",
+            "variant_id": "predictive_continuous"
+          },
+          "job_id": "main_proposed_predictive_continuous_a30_o8",
+          "variant_id": "predictive_continuous",
+          "started_at": "2026-02-25T21:40:09.310246Z",
+          "finished_at": "2026-02-25T21:42:30.674529Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_classic_paper_a30_o16": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:44:51.096899Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_classic_paper_alpha30_omega16.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "classic",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 140.3126489650458,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": -10.874156102294917,
+          "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega16.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": -10.874156102294917,
+            "sr": 0.0,
+            "trades": 113.0,
+            "final_cash": 891258.4389770508,
+            "alpha": 0.3,
+            "omega": 16,
+            "method": "classic",
+            "variant_id": "paper"
+          },
+          "job_id": "main_classic_paper_a30_o16",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T21:42:30.768554Z",
+          "finished_at": "2026-02-25T21:44:51.081200Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_paper_a30_o16": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:47:12.291218Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega16.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 141.08327913703397,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega16.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 16,
+            "method": "proposed",
+            "variant_id": "paper"
+          },
+          "job_id": "main_proposed_paper_a30_o16",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T21:44:51.192380Z",
+          "finished_at": "2026-02-25T21:47:12.275660Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_dueling_double_a30_o16": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:53:46.288872Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega16.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "dueling_double",
+        "branch": "improved",
+        "result": {
+          "elapsed_sec": 393.8445151881315,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_dueling_double_alpha30_omega16.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 16,
+            "method": "proposed",
+            "variant_id": "dueling_double"
+          },
+          "job_id": "main_proposed_dueling_double_a30_o16",
+          "variant_id": "dueling_double",
+          "started_at": "2026-02-25T21:47:12.426571Z",
+          "finished_at": "2026-02-25T21:53:46.271084Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_predictive_continuous_a30_o16": {
+      "status": "completed",
+      "updated_at": "2026-02-25T21:58:51.383208Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega16.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "predictive_continuous",
+        "branch": "improved",
+        "result": {
+          "elapsed_sec": 304.8992321882397,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega16.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 16,
+            "method": "proposed",
+            "variant_id": "predictive_continuous"
+          },
+          "job_id": "main_proposed_predictive_continuous_a30_o16",
+          "variant_id": "predictive_continuous",
+          "started_at": "2026-02-25T21:53:46.459087Z",
+          "finished_at": "2026-02-25T21:58:51.358316Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_classic_paper_a30_o24": {
+      "status": "completed",
+      "updated_at": "2026-02-25T22:03:45.821319Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_classic_paper_alpha30_omega24.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 24,
+        "method": "classic",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 294.2440971448086,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": -5.087442371582088,
+          "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega24.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": -5.087442371582088,
+            "sr": -0.4108976784675681,
+            "trades": 292.0,
+            "final_cash": 949125.5762841791,
+            "alpha": 0.3,
+            "omega": 24,
+            "method": "classic",
+            "variant_id": "paper"
+          },
+          "job_id": "main_classic_paper_a30_o24",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T21:58:51.552205Z",
+          "finished_at": "2026-02-25T22:03:45.796300Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_paper_a30_o24": {
+      "status": "completed",
+      "updated_at": "2026-02-25T22:08:52.952333Z",
+      "outputs": [
+        "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega24.weights.h5"
+      ],
+      "metadata": {
+        "alpha": 0.3,
+        "omega": 24,
+        "method": "proposed",
+        "variant_id": "paper",
+        "branch": "baseline",
+        "result": {
+          "elapsed_sec": 306.92897664615884,
+          "budget_sec": 480.0,
+          "stopped_reason": "episode_cap",
+          "best_metric": 0.0,
+          "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha30_omega24.weights.h5",
+          "episodes_completed": 2,
+          "metrics": {
+            "roi": 0.0,
+            "sr": 0.0,
+            "trades": 0.0,
+            "final_cash": 1000000.0,
+            "alpha": 0.3,
+            "omega": 24,
+            "method": "proposed",
+            "variant_id": "paper"
+          },
+          "job_id": "main_proposed_paper_a30_o24",
+          "variant_id": "paper",
+          "started_at": "2026-02-25T22:03:45.994441Z",
+          "finished_at": "2026-02-25T22:08:52.923415Z",
+          "is_deadline_eligible": true
+        }
+      }
+    },
+    "main_proposed_dueling_double_a30_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.783709Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a30_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.784373Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a55_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.784979Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a55_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.785593Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a55_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.786219Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a55_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.786858Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a55_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.787492Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a55_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.788138Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a55_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.788803Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a55_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.789452Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a55_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.790112Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a55_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.790771Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a55_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.791446Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a55_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.792199Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a80_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.792890Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a80_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.793606Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a80_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.794314Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a80_o8": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.795029Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a80_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.795732Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a80_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.796455Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a80_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.797191Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a80_o16": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.797930Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_classic_paper_a80_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.798668Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_paper_a80_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.799423Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_dueling_double_a80_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.800271Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    },
+    "main_proposed_predictive_continuous_a80_o24": {
+      "status": "frozen",
+      "updated_at": "2026-02-25T21:06:07.801048Z",
+      "outputs": [],
+      "metadata": {
+        "reason": "deadline_reached"
+      }
+    }
+  },
+  "run_id": "run_20260225_204059",
+  "created_at": "2026-02-25T20:40:59.234600Z",
+  "deadline_utc": "2026-02-25T22:35:46.568398Z",
+  "config_hash": "bc063d6366d05679fc8162e0ea82a48b9f891498139192dbfdf6b880b9159f54"
+}

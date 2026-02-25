@@ -1,0 +1,14 @@
+{
+  "model_name": "main_dqn_proposed_predictive_continuous_alpha30_omega16",
+  "timestamp": "2026-02-25 16:58:42",
+  "weights_path": "utils/checkpoints/main_dqn_proposed_predictive_continuous_alpha30_omega16.weights.h5",
+  "metrics": {
+    "episode": 2,
+    "alpha": 0.3,
+    "omega": 16,
+    "method": "proposed",
+    "variant_id": "predictive_continuous",
+    "roi": 0.0,
+    "sr": 0.0
+  }
+}

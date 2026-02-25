@@ -1,0 +1,9 @@
+{
+  "model_name": "predictive_dqn",
+  "timestamp": "2026-02-25 15:56:09",
+  "weights_path": "utils/checkpoints/predictive_dqn.weights.h5",
+  "metrics": {
+    "episode": 2,
+    "metric": -2966.6940163870945
+  }
+}
