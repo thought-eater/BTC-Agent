@@ -1,0 +1,14 @@
+{
+  "model_name": "main_dqn_proposed_paper_alpha80_omega16",
+  "timestamp": "2026-02-27 01:23:21",
+  "weights_path": "utils/checkpoints/main_dqn_proposed_paper_alpha80_omega16.weights.h5",
+  "metrics": {
+    "episode": 11,
+    "alpha": 0.8,
+    "omega": 16,
+    "method": "proposed",
+    "variant_id": "paper",
+    "roi": -13.973172057128908,
+    "sr": -0.21582245115401033
+  }
+}

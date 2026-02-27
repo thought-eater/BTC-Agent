@@ -1,0 +1,14 @@
+{
+  "model_name": "main_dqn_proposed_policy_gradient_alpha80_omega16",
+  "timestamp": "2026-02-27 01:44:32",
+  "weights_path": "utils/checkpoints/main_dqn_proposed_policy_gradient_alpha80_omega16.weights.h5",
+  "metrics": {
+    "episode": 17,
+    "alpha": 0.8,
+    "omega": 16,
+    "method": "proposed",
+    "variant_id": "policy_gradient",
+    "roi": -13.309910139648428,
+    "sr": -0.17195621652748405
+  }
+}

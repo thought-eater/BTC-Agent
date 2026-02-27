@@ -1,9 +1,9 @@
 {
   "model_name": "trade_dqn",
-  "timestamp": "2026-02-25 15:50:07",
+  "timestamp": "2026-02-26 20:42:50",
   "weights_path": "utils/checkpoints/trade_dqn.weights.h5",
   "metrics": {
-    "episode": 2,
-    "metric": 77.699951171875
+    "episode": 88,
+    "metric": 8103.93994140625
   }
 }

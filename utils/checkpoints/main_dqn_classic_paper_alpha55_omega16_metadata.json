@@ -1,0 +1,14 @@
+{
+  "model_name": "main_dqn_classic_paper_alpha55_omega16",
+  "timestamp": "2026-02-26 23:37:01",
+  "weights_path": "utils/checkpoints/main_dqn_classic_paper_alpha55_omega16.weights.h5",
+  "metrics": {
+    "episode": 10,
+    "alpha": 0.55,
+    "omega": 16,
+    "method": "classic",
+    "variant_id": "paper",
+    "roi": -0.35951859423831334,
+    "sr": -0.13575847243958927
+  }
+}

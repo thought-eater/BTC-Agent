@@ -1,0 +1,130 @@
+{
+  "run_id": "run_20260227_013925",
+  "total_budget_hours": 10,
+  "deadline_hours": 10.0,
+  "deadline_utc": "2026-02-27T11:39:25.072610Z",
+  "freeze_policy": "graceful",
+  "gpu_mode_selected": "single",
+  "parallel_workers": 1,
+  "stages": {
+    "prep": {
+      "stage": "prep",
+      "elapsed_sec": 49.188614041078836,
+      "budget_sec": 1800.0,
+      "stopped_reason": "completed"
+    },
+    "trade_pred": {
+      "stage": "trade",
+      "elapsed_sec": 6184.111236994155,
+      "budget_sec": 5400.0,
+      "stopped_reason": "completed"
+    },
+    "main": {
+      "stage": "main",
+      "elapsed_sec": 12245.510543046985,
+      "budget_sec": 21600.0,
+      "stopped_reason": "completed"
+    },
+    "eval": {
+      "stage": "eval",
+      "elapsed_sec": 1.2065272717736661,
+      "budget_sec": 1800.0,
+      "stopped_reason": "completed"
+    }
+  },
+  "artifacts": [
+    "data/processed/btc_price_clean.csv",
+    "data/processed/tweet_sentiment_scores.csv",
+    "data/processed/integrated_base.csv",
+    "data/processed/x1_trade_recommendations.csv",
+    "data/processed/x2_price_predictions.csv",
+    "data/processed/integrated_dataset.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table4_risk30.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table5_risk55.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table6_risk80.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table_improvement_delta.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table_improvement_summary.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/table8_sota_comparison.csv",
+    "/home/grupo1/BTCAgent/results/20260227_001839/price_history.png",
+    "/home/grupo1/BTCAgent/results/20260227_001839/trading_signals.png",
+    "/home/grupo1/BTCAgent/results/20260227_001839/improvement_comparison.png",
+    "/home/grupo1/BTCAgent/results/20260227_001839/deadline_report_run_20260227_013925.md"
+  ],
+  "jobs": [
+    {
+      "job_id": "prep",
+      "status": "completed",
+      "variant_id": "n/a",
+      "method": "n/a"
+    },
+    {
+      "job_id": "trade",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "n/a"
+    },
+    {
+      "job_id": "pred_paper",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "n/a"
+    },
+    {
+      "job_id": "main_classic_paper_a30_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "classic"
+    },
+    {
+      "job_id": "main_proposed_paper_a30_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "proposed"
+    },
+    {
+      "job_id": "main_proposed_policy_gradient_a30_o16",
+      "status": "completed",
+      "variant_id": "policy_gradient",
+      "method": "proposed"
+    },
+    {
+      "job_id": "main_classic_paper_a55_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "classic"
+    },
+    {
+      "job_id": "main_proposed_paper_a55_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "proposed"
+    },
+    {
+      "job_id": "main_proposed_policy_gradient_a55_o16",
+      "status": "completed",
+      "variant_id": "policy_gradient",
+      "method": "proposed"
+    },
+    {
+      "job_id": "main_classic_paper_a80_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "classic"
+    },
+    {
+      "job_id": "main_proposed_paper_a80_o16",
+      "status": "completed",
+      "variant_id": "paper",
+      "method": "proposed"
+    },
+    {
+      "job_id": "main_proposed_policy_gradient_a80_o16",
+      "status": "completed",
+      "variant_id": "policy_gradient",
+      "method": "proposed"
+    }
+  ],
+  "min_improvements": 1,
+  "improvements_completed": 1,
+  "improvement_requirement_met": true
+}

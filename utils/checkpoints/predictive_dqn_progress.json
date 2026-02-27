@@ -1,8 +1,11 @@
 {
-  "episodes_done": 5,
-  "global_step": 10000,
-  "best_metric": -2966.6940163870945,
-  "no_improve": 1,
-  "epsilon": 0.01,
-  "stopped_reason": "completed"
+  "episodes_done": 49,
+  "global_step": 200704,
+  "best_metric": -32383.491656693972,
+  "no_improve": 2,
+  "epsilon": 0.7822236754458713,
+  "stopped_reason": "completed",
+  "x2_nunique": 6,
+  "x2_std": 22.16112973344867,
+  "collapsed_output": false
 }

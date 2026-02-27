@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "prep": {
+      "status": "completed",
+      "updated_at": "2026-02-27T01:13:59.293642Z",
+      "outputs": [
+        "data/processed/btc_price_clean.csv",
+        "data/processed/tweet_sentiment_scores.csv",
+        "data/processed/integrated_base.csv"
+      ],
+      "metadata": {
+        "stage": "prep",
+        "result": {
+          "rows": 36120
+        }
+      }
+    },
+    "trade": {
+      "status": "running",
+      "updated_at": "2026-02-27T01:13:59.450982Z",
+      "outputs": [
+        "data/processed/x1_trade_recommendations.csv"
+      ],
+      "metadata": {
+        "variant_id": "paper",
+        "method": "n/a"
+      }
+    },
+    "pred_paper": {
+      "status": "running",
+      "updated_at": "2026-02-27T01:13:59.451215Z",
+      "outputs": [
+        "data/processed/x2_price_predictions.csv"
+      ],
+      "metadata": {
+        "variant_id": "paper",
+        "method": "n/a"
+      }
+    }
+  },
+  "run_id": "run_20260226_160440",
+  "created_at": "2026-02-26T16:04:40.173298Z",
+  "deadline_utc": "2026-02-27T11:13:08.881238Z",
+  "config_hash": "c3a6f06443e3cfc5c55a544405b1fad1f578b5dafed4ce35a232ae829d769daa"
+}

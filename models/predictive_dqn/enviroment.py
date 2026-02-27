@@ -11,9 +11,12 @@ class PredictiveDQNEnvironment:
         self.action_step = action_step
         self.reset()
 
-    def reset(self):
-        self.idx = 1
+    def reset(self, start_idx: int = 1, episode_max_steps: int | None = None):
+        start_idx = int(max(1, min(start_idx, len(self.prices) - 2)))
+        self.idx = start_idx
         self.prev_pred_price = float(self.prices[self.idx - 1])
+        self.episode_max_steps = int(episode_max_steps) if episode_max_steps is not None else None
+        self.episode_steps = 0
         return self._state(self.idx)
 
     def _state(self, idx: int):
@@ -33,9 +36,10 @@ class PredictiveDQNEnvironment:
         ap_t = float(self.prices[self.idx])
         ap_prev = float(self.prices[self.idx - 1])
 
-        # Predicted % action -> predicted price at t
+        # Predicted % action at t-1 -> predicted price at t.
+        # Using ap_prev as base avoids trivial collapse where pct=0 always yields max reward.
         pct = self.action_to_pct(action_idx)
-        pp_t = ap_t * (1.0 + pct / 100.0)
+        pp_t = ap_prev * (1.0 + pct / 100.0)
 
         # CDR-style zero-reward boundaries based on previous prediction context
         alpha = (ap_t - ap_prev) / max(abs(ap_prev), 1e-8)
@@ -52,6 +56,9 @@ class PredictiveDQNEnvironment:
         self.prev_pred_price = pp_t
 
         self.idx += 1
+        self.episode_steps += 1
         done = self.idx >= len(self.prices) - 1
+        if self.episode_max_steps is not None and self.episode_steps >= self.episode_max_steps:
+            done = True
         next_state = self._state(self.idx if not done else len(self.prices) - 1)
         return next_state, float(np.clip(reward, -100.0, 100.0)), done, {}

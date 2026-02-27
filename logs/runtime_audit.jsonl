@@ -23,3 +23,69 @@
 {"timestamp": "2026-02-25T21:35:46.642183Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 3599.926147959195}}
 {"timestamp": "2026-02-25T21:35:46.642339Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 0.00015624519437551498, "budget_sec": 480.0, "stopped_reason": "completed", "remaining_total_sec": 3599.92598971026}}
 {"timestamp": "2026-02-25T21:35:47.326348Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 3599.2419823491946}}
+{"timestamp": "2026-02-25T22:38:18.077889Z", "event": "stage_end", "stage": "main", "payload": {"elapsed_sec": 3750.7515390147455, "budget_sec": 2400.0, "stopped_reason": "completed", "remaining_total_sec": 0.0}}
+{"timestamp": "2026-02-25T22:38:18.077941Z", "event": "stage_start", "stage": "eval", "payload": {"remaining_total_sec": 0.0}}
+{"timestamp": "2026-02-25T22:38:19.283973Z", "event": "stage_end", "stage": "eval", "payload": {"elapsed_sec": 1.2060248381458223, "budget_sec": 240.0, "stopped_reason": "completed", "remaining_total_sec": 0.0}}
+{"timestamp": "2026-02-25T22:42:11.297977Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 86399.99843471218}}
+{"timestamp": "2026-02-25T22:43:00.722152Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.42417073529214, "budget_sec": 7200.0, "stopped_reason": "completed", "remaining_total_sec": 86350.57425989909}}
+{"timestamp": "2026-02-25T22:43:36.277065Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 86399.99830406532}}
+{"timestamp": "2026-02-25T22:44:25.183416Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 48.906347083859146, "budget_sec": 7200.0, "stopped_reason": "completed", "remaining_total_sec": 86351.09195272438}}
+{"timestamp": "2026-02-25T22:44:25.332615Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 86350.94275406515}}
+{"timestamp": "2026-02-25T22:44:25.332771Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 0.00015455204993486404, "budget_sec": 10800.0, "stopped_reason": "completed", "remaining_total_sec": 86350.94259713823}}
+{"timestamp": "2026-02-25T22:44:25.988517Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 86350.28685229318}}
+{"timestamp": "2026-02-25T22:45:22.633221Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 86399.99834847776}}
+{"timestamp": "2026-02-25T22:46:11.676839Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.04361484386027, "budget_sec": 7200.0, "stopped_reason": "completed", "remaining_total_sec": 86350.95472461684}}
+{"timestamp": "2026-02-25T22:46:11.840274Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 86350.79129117588}}
+{"timestamp": "2026-02-25T22:46:11.840667Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 0.00039247190579771996, "budget_sec": 10800.0, "stopped_reason": "completed", "remaining_total_sec": 86350.79089591885}}
+{"timestamp": "2026-02-25T22:46:12.495462Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 86350.13610186195}}
+{"timestamp": "2026-02-26T16:04:40.173477Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.999602458905}}
+{"timestamp": "2026-02-26T16:05:29.997062Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.823579342104495, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.176017425954}}
+{"timestamp": "2026-02-26T16:05:30.145745Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.02733498998}}
+{"timestamp": "2026-02-26T17:39:07.239256Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 5617.093505919911, "budget_sec": 5400.0, "stopped_reason": "completed", "remaining_total_sec": 30332.933823048137}}
+{"timestamp": "2026-02-26T17:39:07.561918Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 30332.611162177753}}
+{"timestamp": "2026-02-26T18:19:53.850837Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99949676776}}
+{"timestamp": "2026-02-26T18:20:43.418767Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.56793101411313, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.43156586494}}
+{"timestamp": "2026-02-26T18:20:43.567408Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.28292693896}}
+{"timestamp": "2026-02-26T18:23:38.423417Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.999325645156}}
+{"timestamp": "2026-02-26T18:24:27.629905Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.2064806339331, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.79283754714}}
+{"timestamp": "2026-02-26T18:24:27.779219Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.64352459693}}
+{"timestamp": "2026-02-26T18:24:27.779556Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 0.0003362358547747135, "budget_sec": 5400.0, "stopped_reason": "completed", "remaining_total_sec": 35950.6431857259}}
+{"timestamp": "2026-02-26T18:24:28.096946Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 35950.32579743024}}
+{"timestamp": "2026-02-26T19:31:31.132066Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 86399.99875919428}}
+{"timestamp": "2026-02-26T19:32:09.265650Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 38.133577793836594, "budget_sec": 7200.0, "stopped_reason": "completed", "remaining_total_sec": 86361.86517574918}}
+{"timestamp": "2026-02-26T19:32:09.430197Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 86361.70062934002}}
+{"timestamp": "2026-02-26T19:35:55.147833Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99931195984}}
+{"timestamp": "2026-02-26T19:36:44.380374Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.23254154389724, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.766770714894}}
+{"timestamp": "2026-02-26T19:36:44.527771Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.61937492294}}
+{"timestamp": "2026-02-26T19:36:44.528093Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 0.00032197777181863785, "budget_sec": 5400.0, "stopped_reason": "completed", "remaining_total_sec": 35950.61905162176}}
+{"timestamp": "2026-02-26T19:36:44.843751Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 35950.30339413788}}
+{"timestamp": "2026-02-26T20:32:24.951369Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.999376592226}}
+{"timestamp": "2026-02-26T20:33:14.782084Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.83071052795276, "budget_sec": 300.0, "stopped_reason": "completed", "remaining_total_sec": 35950.168661875185}}
+{"timestamp": "2026-02-26T20:33:14.932577Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.01816899283}}
+{"timestamp": "2026-02-26T21:20:06.776888Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 2811.8443063218147, "budget_sec": 300.0, "stopped_reason": "completed", "remaining_total_sec": 33138.173857791815}}
+{"timestamp": "2026-02-26T21:33:49.621284Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99940137705}}
+{"timestamp": "2026-02-26T21:34:39.066081Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.44479623390362, "budget_sec": 300.0, "stopped_reason": "completed", "remaining_total_sec": 35950.55460386211}}
+{"timestamp": "2026-02-26T21:34:39.212927Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.407758811954}}
+{"timestamp": "2026-02-26T21:50:38.115582Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 958.9026511614211, "budget_sec": 300.0, "stopped_reason": "completed", "remaining_total_sec": 34991.50510240998}}
+{"timestamp": "2026-02-26T22:22:06.395151Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99936608132}}
+{"timestamp": "2026-02-26T22:22:55.759061Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.363908662926406, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.635456567165}}
+{"timestamp": "2026-02-26T22:22:55.910711Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.483808355406}}
+{"timestamp": "2026-02-26T22:36:01.543767Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99941972317}}
+{"timestamp": "2026-02-26T22:36:50.774343Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.23057355405763, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.7688441053}}
+{"timestamp": "2026-02-26T22:36:50.924424Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.618764007}}
+{"timestamp": "2026-02-26T23:09:51.487317Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 1980.5628897813149, "budget_sec": 5400.0, "stopped_reason": "completed", "remaining_total_sec": 33970.055869857315}}
+{"timestamp": "2026-02-26T23:09:51.805146Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 33969.738041411154}}
+{"timestamp": "2026-02-27T00:18:41.188762Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.99960874114}}
+{"timestamp": "2026-02-27T00:19:30.608197Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.41943125985563, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.58017330291}}
+{"timestamp": "2026-02-27T00:19:30.761974Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.42639764398}}
+{"timestamp": "2026-02-27T01:13:08.881727Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.999455221}}
+{"timestamp": "2026-02-27T01:13:59.293891Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 50.41216414188966, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35949.587290777825}}
+{"timestamp": "2026-02-27T01:13:59.450749Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35949.43043333618}}
+{"timestamp": "2026-02-27T01:39:25.073116Z", "event": "stage_start", "stage": "prep", "payload": {"remaining_total_sec": 35999.9994380991}}
+{"timestamp": "2026-02-27T01:40:14.261734Z", "event": "stage_end", "stage": "prep", "payload": {"elapsed_sec": 49.188614041078836, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 35950.81081933901}}
+{"timestamp": "2026-02-27T01:40:14.414080Z", "event": "stage_start", "stage": "trade", "payload": {"remaining_total_sec": 35950.6584750209}}
+{"timestamp": "2026-02-27T03:23:18.525320Z", "event": "stage_end", "stage": "trade", "payload": {"elapsed_sec": 6184.111236994155, "budget_sec": 5400.0, "stopped_reason": "completed", "remaining_total_sec": 29766.547234039754}}
+{"timestamp": "2026-02-27T03:23:18.859006Z", "event": "stage_start", "stage": "main", "payload": {"remaining_total_sec": 29766.213548195083}}
+{"timestamp": "2026-02-27T06:47:24.369552Z", "event": "stage_end", "stage": "main", "payload": {"elapsed_sec": 12245.510543046985, "budget_sec": 21600.0, "stopped_reason": "completed", "remaining_total_sec": 17520.70300165098}}
+{"timestamp": "2026-02-27T06:47:24.369658Z", "event": "stage_start", "stage": "eval", "payload": {"remaining_total_sec": 17520.70289509883}}
+{"timestamp": "2026-02-27T06:47:25.576192Z", "event": "stage_end", "stage": "eval", "payload": {"elapsed_sec": 1.2065272717736661, "budget_sec": 1800.0, "stopped_reason": "completed", "remaining_total_sec": 17519.496361915953}}

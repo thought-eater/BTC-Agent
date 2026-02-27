@@ -1,0 +1,4 @@
+roi_improved,sr_improved,trades_improved,final_cash_improved,alpha,omega,method,variant_id,branch,job_id,is_deadline_eligible,roi_baseline,sr_baseline,trades_baseline,final_cash_baseline,delta_roi,delta_sr,delta_trades,delta_final_cash
+-18.288827103515658,-0.17204292477968305,168.0,817111.7289648434,0.3,16,proposed,policy_gradient,improved,main_proposed_policy_gradient_a30_o16,True,0.0,0.0,0.0,1000000.0,-18.288827103515658,-0.17204292477968305,168.0,-182888.27103515656
+1.0626836140136466,-0.10607430455676402,39.0,1010626.8361401365,0.55,16,proposed,policy_gradient,improved,main_proposed_policy_gradient_a55_o16,True,3.5161696467284926,0.1444187788424004,78.0,1035161.6964672849,-2.4534860327148458,-0.25049308339916443,-39.0,-24534.86032714846
+0.0,0.0,0.0,1000000.0,0.8,16,proposed,policy_gradient,improved,main_proposed_policy_gradient_a80_o16,True,0.0,0.0,0.0,1000000.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,10 @@
+{
+  "model_name": "predictive_dqn_best_diverse",
+  "timestamp": "2026-02-26 22:21:24",
+  "weights_path": "utils/checkpoints/predictive_dqn_best_diverse.weights.h5",
+  "metrics": {
+    "episode": 48,
+    "metric": -33639.03896559098,
+    "unique_actions": 11
+  }
+}

@@ -1,3 +1,0 @@
-variant_id,branch,method,alpha,omega,roi,sr,trades,final_cash
-paper,baseline,classic,0.3,8,0.0,0.0,0.0,1000000.0
-paper,baseline,proposed,0.3,8,0.0,0.0,0.0,1000000.0

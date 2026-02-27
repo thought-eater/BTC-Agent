@@ -34,11 +34,24 @@ class TradeDQNAgent:
         self.batch_size = batch_size
         self.target_update_freq = target_update_freq
         self.replay = ReplayBuffer(replay_size)
+        self.state_mean = np.zeros((1,), dtype=np.float32)
+        self.state_std = np.ones((1,), dtype=np.float32)
+
+    def set_state_normalization(self, mean: np.ndarray, std: np.ndarray) -> None:
+        mean = np.asarray(mean, dtype=np.float32).reshape(-1)
+        std = np.asarray(std, dtype=np.float32).reshape(-1)
+        if mean.size == 1 and std.size == 1:
+            self.state_mean = mean
+            self.state_std = np.maximum(std, 1e-6).astype(np.float32)
+
+    def _norm_states(self, states: np.ndarray) -> np.ndarray:
+        x = np.asarray(states, dtype=np.float32)
+        return (x - self.state_mean) / self.state_std
 
     def act(self, state: np.ndarray) -> int:
         if np.random.rand() < self.epsilon:
             return int(np.random.randint(0, 3))
-        q = self.model(np.expand_dims(state, axis=0), training=False).numpy()[0]
+        q = self.model(np.expand_dims(self._norm_states(state), axis=0), training=False).numpy()[0]
         return int(np.argmax(q))
 
     def remember(self, state, action, reward, next_state, done):
@@ -49,13 +62,17 @@ class TradeDQNAgent:
             return None
 
         states, actions, rewards, next_states, dones = self.replay.sample(self.batch_size)
-        states = np.asarray(states, dtype=np.float32)
-        next_states = np.asarray(next_states, dtype=np.float32)
+        states = self._norm_states(states)
+        next_states = self._norm_states(next_states)
         actions = np.asarray(actions, dtype=np.int32)
         rewards = np.asarray(rewards, dtype=np.float32)
         dones = np.asarray(dones, dtype=np.float32)
 
-        next_q = self.target_model(next_states, training=False).numpy().max(axis=1)
+        # Double DQN: online net selects, target net evaluates.
+        next_online_q = self.model(next_states, training=False).numpy()
+        next_actions = np.argmax(next_online_q, axis=1)
+        next_target_q_all = self.target_model(next_states, training=False).numpy()
+        next_q = next_target_q_all[np.arange(self.batch_size), next_actions]
         target_values = rewards + (1.0 - dones) * self.gamma * next_q
 
         with tf.GradientTape() as tape:
@@ -76,10 +93,26 @@ class TradeDQNAgent:
         return float(loss.numpy())
 
     def infer_actions(self, states: np.ndarray) -> np.ndarray:
-        q = self.model(states.astype(np.float32), training=False).numpy()
+        q = self.model(self._norm_states(states), training=False).numpy()
         idx = np.argmax(q, axis=1)
         # map index -> {-1,0,1} as x1
         return np.take(np.array([-1, 0, 1], dtype=np.int32), idx)
+
+    def boost_exploration(self, epsilon_floor: float = 0.4) -> None:
+        self.epsilon = float(max(self.epsilon, epsilon_floor))
+
+    def perturb_policy_head(self, stddev: float = 1e-2) -> None:
+        if not self.model.layers:
+            return
+        head = self.model.layers[-1]
+        weights = head.get_weights()
+        if len(weights) != 2:
+            return
+        w, b = weights
+        rng = np.random.default_rng()
+        w = w + rng.normal(0.0, stddev, size=w.shape).astype(np.float32)
+        b = b + rng.normal(0.0, stddev, size=b.shape).astype(np.float32)
+        head.set_weights([w, b])
 
     def save_replay(self, path: str) -> str:
         return self.replay.dump(path)

@@ -1,0 +1,8 @@
+{
+  "episodes_done": 31,
+  "global_step": 62000,
+  "best_metric": -13.973172057128908,
+  "no_improve": 20,
+  "epsilon": 0.01,
+  "stopped_reason": "completed"
+}

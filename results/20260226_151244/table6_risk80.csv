@@ -1,0 +1,3 @@
+variant_id,branch,method,alpha,omega,roi,sr,trades,final_cash
+paper,baseline,proposed,0.8,16,-10.091485440917964,0.07552395336142206,132.0,899085.1455908203
+policy_gradient,improved,proposed,0.8,16,0.0,0.0,0.0,1000000.0

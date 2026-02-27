@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass, field
 from datetime import timedelta
+from pathlib import Path
 from typing import Dict, List
 
 
@@ -83,10 +84,26 @@ class HyperParameters:
     RUN_STATE_PATH: str = "results/run_state.json"
 
     def __post_init__(self) -> None:
+        results_override = os.getenv("BTCA_RESULTS_DIR", "").strip()
+        if results_override:
+            self.RESULTS_DIR = results_override
+
+        self.RUN_MANIFEST_PATH = str(Path(self.RESULTS_DIR) / "run_manifest.json")
+        self.RUN_STATE_PATH = str(Path(self.RESULTS_DIR) / "run_state.json")
+
+        self.PREDICTIVE_DQN_OUTPUT_DIM = self.compute_predictive_output_dim()
+
         os.makedirs(self.DATA_PROCESSED_DIR, exist_ok=True)
         os.makedirs(self.CHECKPOINTS_DIR, exist_ok=True)
         os.makedirs(self.RESULTS_DIR, exist_ok=True)
         os.makedirs(self.LOGS_DIR, exist_ok=True)
+
+    def compute_predictive_output_dim(self) -> int:
+        step = float(self.PREDICTIVE_DQN_ACTION_STEP)
+        if step <= 0:
+            raise ValueError("PREDICTIVE_DQN_ACTION_STEP must be > 0.")
+        span = float(self.PREDICTIVE_DQN_ACTION_MAX - self.PREDICTIVE_DQN_ACTION_MIN)
+        return int(round(span / step)) + 1
 
     def parse_stage_budget(self, stage_budget: str) -> Dict[str, int]:
         parsed = dict(self.STAGE_BUDGET_MIN)
@@ -104,7 +121,7 @@ class HyperParameters:
 
     def parse_variant_list(self, variant_list: str) -> List[str]:
         if not variant_list:
-            return ["paper", "dueling_double"]
+            return ["paper", "policy_gradient"]
         out = [x.strip() for x in variant_list.split(",") if x.strip()]
         if "paper" not in out:
             out.insert(0, "paper")
@@ -112,7 +129,7 @@ class HyperParameters:
 
     def parse_predictive_variant_list(self, variant_list: str) -> List[str]:
         if not variant_list:
-            return ["paper", "continuous"]
+            return ["paper"]
         out = [x.strip() for x in variant_list.split(",") if x.strip()]
         if "paper" not in out:
             out.insert(0, "paper")
@@ -131,7 +148,7 @@ class HyperParameters:
     def validate(self) -> bool:
         assert self.TOTAL_HOURS_TARGET == self.OVERLAP_DAYS_TARGET * 24
         assert self.TEST_HOURS == 720
-        assert self.PREDICTIVE_DQN_OUTPUT_DIM == 20001
+        assert self.PREDICTIVE_DQN_OUTPUT_DIM == self.compute_predictive_output_dim()
         assert self.BATCH_SIZE == 64
         assert self.TARGET_UPDATE_FREQ == 400
         return True

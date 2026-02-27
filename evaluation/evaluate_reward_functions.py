@@ -19,15 +19,14 @@ def run(results: List[dict], results_dir: str = "results") -> dict:
     if base.empty:
         return {"generated": []}
 
-    selected_variants = {"paper", "dueling_double", "predictive_continuous"}
+    selected_variants = {"paper", "policy_gradient"}
     out = base[base["variant_id"].isin(selected_variants)].copy()
     if out.empty:
         return {"generated": []}
 
     variant_label = {
         "paper": "Paper baseline",
-        "dueling_double": "Main-DQN dueling+double",
-        "predictive_continuous": "Continuous emotion/predictive signal",
+        "policy_gradient": "Main policy-gradient",
     }
     out["variant_label"] = out["variant_id"].map(variant_label).fillna(out["variant_id"])
     cols = ["branch", "method", "variant_id", "variant_label", "alpha", "omega", "roi", "sr", "trades", "final_cash"]

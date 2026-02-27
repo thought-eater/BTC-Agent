@@ -1,0 +1,10 @@
+{
+  "model_name": "trade_dqn_best_diverse",
+  "timestamp": "2026-02-26 20:42:50",
+  "weights_path": "utils/checkpoints/trade_dqn_best_diverse.weights.h5",
+  "metrics": {
+    "episode": 88,
+    "metric": 8103.93994140625,
+    "unique_actions": 3
+  }
+}

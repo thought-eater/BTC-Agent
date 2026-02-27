@@ -6,3 +6,822 @@
 [2026-02-25 16:06:07] [MainPipeline] [INFO] [PHASE E] Generating tables/plots/reports
 [2026-02-25 16:06:08] [MainPipeline] [INFO] Pipeline completed. Deadline report: results/deadline_report_run_20260225_204749.md
 [2026-02-25 16:35:46] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-25 17:38:18] [MainPipeline] [INFO] [PHASE E] Generating tables/plots/reports
+[2026-02-25 17:38:19] [MainPipeline] [INFO] Pipeline completed. Deadline report: results/deadline_report_dryrun_1h_with_improvements.md
+[2026-02-25 17:42:11] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-25 17:43:00] [MainPipeline] [INFO] Prep-only completed. Report: results/deadline_report_prep_final.md
+[2026-02-25 17:43:36] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-25 17:45:22] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-25 17:46:11] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-25 17:46:11] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=3 runnable=0 skipped=3
+[2026-02-25 17:46:11] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 0.00039247190579771996, 'budget_sec': 10800.0, 'stopped_reason': 'completed'}
+[2026-02-25 17:46:12] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-25 17:46:12] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=36 workers=1 per_job_minutes=16
+[2026-02-25 17:46:12] [MainPipeline] [INFO] [PHASE C/D] Running batch 16: jobs=1
+[2026-02-25 18:04:07] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_predictive_continuous_a55_o8 (reason=time_budget, best=0.000000)
+[2026-02-25 18:04:07] [MainPipeline] [INFO] [PHASE C/D] Running batch 17: jobs=1
+[2026-02-25 18:21:48] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a55_o16 (reason=time_budget, best=0.000000)
+[2026-02-25 18:21:48] [MainPipeline] [INFO] [PHASE C/D] Running batch 18: jobs=1
+[2026-02-25 18:39:36] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a55_o16 (reason=time_budget, best=0.000000)
+[2026-02-25 18:39:36] [MainPipeline] [INFO] [PHASE C/D] Running batch 19: jobs=1
+[2026-02-25 18:57:48] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_dueling_double_a55_o16 (reason=time_budget, best=0.000000)
+[2026-02-25 18:57:48] [MainPipeline] [INFO] [PHASE C/D] Running batch 20: jobs=1
+[2026-02-25 19:14:54] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_predictive_continuous_a55_o16 (reason=time_budget, best=0.000000)
+[2026-02-25 19:14:54] [MainPipeline] [INFO] [PHASE C/D] Running batch 21: jobs=1
+[2026-02-25 19:32:53] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a55_o24 (reason=time_budget, best=0.000000)
+[2026-02-25 19:32:53] [MainPipeline] [INFO] [PHASE C/D] Running batch 22: jobs=1
+[2026-02-25 19:50:40] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a55_o24 (reason=time_budget, best=0.000000)
+[2026-02-25 19:50:40] [MainPipeline] [INFO] [PHASE C/D] Running batch 23: jobs=1
+[2026-02-25 20:08:40] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_dueling_double_a55_o24 (reason=time_budget, best=0.000000)
+[2026-02-25 20:08:40] [MainPipeline] [INFO] [PHASE C/D] Running batch 24: jobs=1
+[2026-02-25 20:26:31] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_predictive_continuous_a55_o24 (reason=time_budget, best=0.000000)
+[2026-02-25 20:26:31] [MainPipeline] [INFO] [PHASE C/D] Running batch 25: jobs=1
+[2026-02-25 20:42:49] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a80_o8 (reason=time_budget, best=0.000000)
+[2026-02-25 20:42:49] [MainPipeline] [INFO] [PHASE C/D] Running batch 26: jobs=1
+[2026-02-25 21:00:26] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a80_o8 (reason=time_budget, best=0.000000)
+[2026-02-25 21:00:26] [MainPipeline] [INFO] [PHASE C/D] Running batch 27: jobs=1
+[2026-02-25 21:18:14] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_dueling_double_a80_o8 (reason=time_budget, best=0.000000)
+[2026-02-25 21:18:14] [MainPipeline] [INFO] [PHASE C/D] Running batch 28: jobs=1
+[2026-02-26 08:43:52] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 9
+[2026-02-26 08:43:52] [Emergency2H] [INFO] [EMERGENCY] Dry run mode; no training will be executed.
+[2026-02-26 08:44:44] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 9
+[2026-02-26 08:44:44] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_predictive_continuous_a80_o8 (1/9) with episode_cap=2 budget_min=8
+[2026-02-26 08:46:35] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_proposed_predictive_continuous_a80_o8
+[2026-02-26 08:48:26] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_predictive_continuous_a80_o8 reason=early_stop best=0.0
+[2026-02-26 08:48:26] [Emergency2H] [INFO] [EMERGENCY] Running main_classic_paper_a80_o16 (2/9) with episode_cap=2 budget_min=8
+[2026-02-26 08:50:14] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_classic_paper_a80_o16
+[2026-02-26 08:52:05] [Emergency2H] [INFO] [EMERGENCY] Completed main_classic_paper_a80_o16 reason=early_stop best=0.0
+[2026-02-26 08:52:05] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_paper_a80_o16 (3/9) with episode_cap=2 budget_min=8
+[2026-02-26 08:53:55] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_proposed_paper_a80_o16
+[2026-02-26 08:55:46] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a80_o16 reason=early_stop best=0.0
+[2026-02-26 08:55:46] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_dueling_double_a80_o16 (4/9) with episode_cap=2 budget_min=8
+[2026-02-26 08:59:16] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_proposed_dueling_double_a80_o16
+[2026-02-26 09:02:51] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_dueling_double_a80_o16 reason=early_stop best=0.0
+[2026-02-26 09:02:51] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_predictive_continuous_a80_o16 (5/9) with episode_cap=2 budget_min=8
+[2026-02-26 09:04:40] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_proposed_predictive_continuous_a80_o16
+[2026-02-26 09:06:30] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_predictive_continuous_a80_o16 reason=early_stop best=0.0
+[2026-02-26 09:06:30] [Emergency2H] [INFO] [EMERGENCY] Running main_classic_paper_a80_o24 (6/9) with episode_cap=2 budget_min=8
+[2026-02-26 09:08:19] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_classic_paper_a80_o24
+[2026-02-26 09:10:11] [Emergency2H] [INFO] [EMERGENCY] Completed main_classic_paper_a80_o24 reason=early_stop best=0.0
+[2026-02-26 09:10:11] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_paper_a80_o24 (7/9) with episode_cap=2 budget_min=8
+[2026-02-26 09:11:20] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:11:31] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:11:32] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:11:32] [Emergency2H] [INFO] [EMERGENCY] Dry run mode; no training will be executed.
+[2026-02-26 09:11:59] [Emergency2H] [INFO] [EMERGENCY] Fast completion detected; running fallback pass for main_proposed_paper_a80_o24
+[2026-02-26 09:13:50] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a80_o24 reason=early_stop best=0.0
+[2026-02-26 09:13:50] [Emergency2H] [INFO] [EMERGENCY] Running main_proposed_dueling_double_a80_o24 (8/9) with episode_cap=2 budget_min=8
+[2026-02-26 09:17:02] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:17:03] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:17:03] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=6 workers=2
+[2026-02-26 09:17:03] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=6 workers=2
+[2026-02-26 09:17:20] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:17:21] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:17:21] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=6 workers=2
+[2026-02-26 09:17:21] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=6 workers=2
+[2026-02-26 09:18:52] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:18:52] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:18:52] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=6 workers=2
+[2026-02-26 09:18:52] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=6 workers=2
+[2026-02-26 09:20:24] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a30_o16 reason=episode_cap best=-11.565356862548867
+[2026-02-26 09:20:24] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a30_o16 reason=episode_cap best=-2.660960815918073
+[2026-02-26 09:20:24] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a55_o16 (3/6) budget_min=6 workers=2
+[2026-02-26 09:20:24] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a55_o16 (4/6) budget_min=6 workers=2
+[2026-02-26 09:21:57] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a55_o16 reason=episode_cap best=-5.851033261718776
+[2026-02-26 09:21:57] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a55_o16 reason=episode_cap best=-13.611227260253928
+[2026-02-26 09:21:57] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a80_o16 (5/6) budget_min=6 workers=2
+[2026-02-26 09:21:57] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a80_o16 (6/6) budget_min=6 workers=2
+[2026-02-26 09:23:25] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a80_o16 reason=episode_cap best=-8.877788139160176
+[2026-02-26 09:23:25] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a80_o16 reason=episode_cap best=-12.31333560205081
+[2026-02-26 09:23:26] [Emergency2H] [INFO] [EMERGENCY] Completed. Report: results/deadline_report_emergency_2h_emergency_2h_aggressive.md
+[2026-02-26 09:24:41] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:24:41] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:24:41] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=30 workers=2
+[2026-02-26 09:24:41] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=30 workers=2
+[2026-02-26 09:38:56] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:38:56] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:38:56] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=6 workers=2
+[2026-02-26 09:38:56] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=6 workers=2
+[2026-02-26 09:41:29] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a30_o16 reason=episode_cap best=-14.950321252441418
+[2026-02-26 09:41:29] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a30_o16 reason=episode_cap best=0.0
+[2026-02-26 09:41:29] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a55_o16 (3/6) budget_min=6 workers=2
+[2026-02-26 09:41:29] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a55_o16 (4/6) budget_min=6 workers=2
+[2026-02-26 09:42:48] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 09:42:49] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 09:42:49] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=30 workers=2
+[2026-02-26 09:42:49] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=30 workers=2
+[2026-02-26 09:49:58] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a30_o16 reason=early_stop best=-6.095718432861241
+[2026-02-26 09:49:58] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a30_o16 reason=early_stop best=0.0
+[2026-02-26 09:49:58] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a55_o16 (3/6) budget_min=30 workers=2
+[2026-02-26 09:49:58] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a55_o16 (4/6) budget_min=30 workers=2
+[2026-02-26 09:54:55] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a55_o16 reason=early_stop best=0.0
+[2026-02-26 09:54:55] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a55_o16 reason=early_stop best=-3.1589437128906837
+[2026-02-26 09:54:55] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a80_o16 (5/6) budget_min=30 workers=2
+[2026-02-26 09:54:55] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a80_o16 (6/6) budget_min=30 workers=2
+[2026-02-26 10:01:33] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a80_o16 reason=early_stop best=0.0
+[2026-02-26 10:01:33] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a80_o16 reason=early_stop best=0.0
+[2026-02-26 10:01:34] [Emergency2H] [INFO] [EMERGENCY] Completed. Report: results/deadline_report_emergency_2h_emergency_2h_parallel_heavy.md
+[2026-02-26 10:10:51] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 10:10:51] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 10:10:51] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=6 workers=2
+[2026-02-26 10:10:51] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=6 workers=2
+[2026-02-26 10:11:09] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 10:11:10] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 10:11:10] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=8 workers=1
+[2026-02-26 10:12:14] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 10:12:14] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 10:12:14] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=15 workers=2
+[2026-02-26 10:12:14] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=15 workers=2
+[2026-02-26 10:12:46] [Emergency2H] [WARNING] [EMERGENCY] Detected collapsed preprocessing outputs (x1_unique=1, x2_unique=1). Generating emergency non-collapsed RL-compatible signals.
+[2026-02-26 10:12:47] [Emergency2H] [INFO] [EMERGENCY] Target non-completed main nodes: 6
+[2026-02-26 10:12:47] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a30_o16 (1/6) budget_min=30 workers=2
+[2026-02-26 10:12:47] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a30_o16 (2/6) budget_min=30 workers=2
+[2026-02-26 10:19:32] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a30_o16 reason=early_stop best=0.0
+[2026-02-26 10:19:32] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a30_o16 reason=episode_cap best=-0.3305190029297024
+[2026-02-26 10:19:32] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a55_o16 (3/6) budget_min=30 workers=2
+[2026-02-26 10:19:32] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a55_o16 (4/6) budget_min=30 workers=2
+[2026-02-26 10:24:37] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a55_o16 reason=early_stop best=-0.2322723422851646
+[2026-02-26 10:24:37] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a55_o16 reason=episode_cap best=-4.392136572753941
+[2026-02-26 10:24:37] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_paper_a80_o16 (5/6) budget_min=30 workers=2
+[2026-02-26 10:24:37] [Emergency2H] [INFO] [EMERGENCY] Queue main_proposed_policy_gradient_a80_o16 (6/6) budget_min=30 workers=2
+[2026-02-26 10:30:12] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_policy_gradient_a80_o16 reason=early_stop best=0.0
+[2026-02-26 10:30:12] [Emergency2H] [INFO] [EMERGENCY] Completed main_proposed_paper_a80_o16 reason=episode_cap best=-0.5189581970214727
+[2026-02-26 10:30:13] [Emergency2H] [INFO] [EMERGENCY] Completed. Report: /home/grupo1/BTCAgent/results/20260226_151244/deadline_report_emergency_2h_emergency_20260226_151246.md
+[2026-02-26 11:04:40] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 11:05:30] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 11:05:30] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE B] Completed trade (reason=early_stop, episodes=18)
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE B] Completed pred_paper (reason=early_stop, episodes=36)
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 5617.093505919911, 'budget_sec': 5400.0, 'stopped_reason': 'completed'}
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=27 workers=1 per_job_minutes=13
+[2026-02-26 12:39:07] [MainPipeline] [INFO] [PHASE C/D] Running batch 1: jobs=1
+[2026-02-26 12:53:18] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o8 (reason=time_budget, best=0.000000)
+[2026-02-26 12:53:18] [MainPipeline] [INFO] [PHASE C/D] Running batch 2: jobs=1
+[2026-02-26 13:07:16] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a30_o8 (reason=time_budget, best=0.000000)
+[2026-02-26 13:07:16] [MainPipeline] [INFO] [PHASE C/D] Running batch 3: jobs=1
+[2026-02-26 13:15:30] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_policy_gradient_a30_o8 (reason=early_stop, best=0.000000)
+[2026-02-26 13:15:30] [MainPipeline] [INFO] [PHASE C/D] Running batch 4: jobs=1
+[2026-02-26 13:19:53] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 13:20:43] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 13:20:43] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 13:23:38] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 13:24:27] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 13:24:27] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=0 skipped=2
+[2026-02-26 13:24:27] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 0.0003362358547747135, 'budget_sec': 5400.0, 'stopped_reason': 'completed'}
+[2026-02-26 13:24:28] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-26 13:24:28] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=27 workers=1 per_job_minutes=20
+[2026-02-26 13:24:28] [MainPipeline] [INFO] [PHASE C/D] Running batch 1: jobs=1
+[2026-02-26 13:45:54] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o8 (reason=time_budget, best=0.000000)
+[2026-02-26 13:45:54] [MainPipeline] [INFO] [PHASE C/D] Running batch 2: jobs=1
+[2026-02-26 14:07:18] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a30_o8 (reason=time_budget, best=0.000000)
+[2026-02-26 14:07:18] [MainPipeline] [INFO] [PHASE C/D] Running batch 3: jobs=1
+[2026-02-26 14:12:58] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_policy_gradient_a30_o8 (reason=early_stop, best=0.000000)
+[2026-02-26 14:12:58] [MainPipeline] [INFO] [PHASE C/D] Running batch 4: jobs=1
+[2026-02-26 14:31:31] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 14:32:09] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 14:32:09] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 14:33:53] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o16 (reason=time_budget, best=0.000000)
+[2026-02-26 14:33:53] [MainPipeline] [INFO] [PHASE C/D] Running batch 5: jobs=1
+[2026-02-26 14:35:55] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=0 skipped=2
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 0.00032197777181863785, 'budget_sec': 5400.0, 'stopped_reason': 'completed'}
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE C/D] Target grid: alpha=[0.3, 0.55, 0.8] omega=[16]
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=9 workers=1 per_job_minutes=40
+[2026-02-26 14:36:44] [MainPipeline] [INFO] [PHASE C/D] Running batch 1: jobs=1
+[2026-02-26 14:38:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 14:40:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=2 roi=-10.031603 sr=-0.441026 trades=697 metric=-10.031603 best=nan no_improve=1 trades_ok=True
+[2026-02-26 14:42:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-10.031603 no_improve=0 trades_ok=False
+[2026-02-26 14:44:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-10.031603 no_improve=1 trades_ok=False
+[2026-02-26 14:45:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=5 roi=-13.219042 sr=-0.198816 trades=716 metric=-13.219042 best=-10.031603 no_improve=2 trades_ok=True
+[2026-02-26 14:47:42] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=6 roi=-0.091753 sr=-0.074693 trades=8 metric=-0.091753 best=-10.031603 no_improve=3 trades_ok=False
+[2026-02-26 14:49:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=7 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-10.031603 no_improve=4 trades_ok=False
+[2026-02-26 14:51:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-10.031603 no_improve=5 trades_ok=False
+[2026-02-26 14:52:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=9 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-10.031603 no_improve=6 trades_ok=False
+[2026-02-26 14:54:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=10 roi=-7.673410 sr=-0.320249 trades=654 metric=-7.673410 best=-10.031603 no_improve=7 trades_ok=True
+[2026-02-26 14:56:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=11 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.673410 no_improve=0 trades_ok=False
+[2026-02-26 14:58:25] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=12 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.673410 no_improve=1 trades_ok=False
+[2026-02-26 15:00:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=13 roi=-18.340475 sr=-0.337120 trades=327 metric=-18.340475 best=-7.673410 no_improve=2 trades_ok=True
+[2026-02-26 15:02:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=14 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.673410 no_improve=3 trades_ok=False
+[2026-02-26 15:03:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.673410 no_improve=4 trades_ok=False
+[2026-02-26 15:05:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=16 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.673410 no_improve=5 trades_ok=False
+[2026-02-26 15:07:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=17 roi=-0.537463 sr=-0.151768 trades=38 metric=-0.537463 best=-7.673410 no_improve=6 trades_ok=True
+[2026-02-26 15:09:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=18 roi=-2.412429 sr=-0.351083 trades=168 metric=-2.412429 best=-0.537463 no_improve=0 trades_ok=True
+[2026-02-26 15:11:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=19 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.537463 no_improve=1 trades_ok=False
+[2026-02-26 15:13:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=20 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.537463 no_improve=2 trades_ok=False
+[2026-02-26 15:14:59] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=21 roi=-12.219260 sr=0.037320 trades=113 metric=-12.219260 best=-0.537463 no_improve=3 trades_ok=True
+[2026-02-26 15:16:46] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=22 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.537463 no_improve=4 trades_ok=False
+[2026-02-26 15:16:53] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a30_o16 reason=time_budget episodes=22
+[2026-02-26 15:16:53] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o16 (reason=time_budget, best=-0.537463)
+[2026-02-26 15:16:53] [MainPipeline] [INFO] [PHASE C/D] Running batch 2: jobs=1
+[2026-02-26 15:18:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 15:20:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=1 trades_ok=False
+[2026-02-26 15:22:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=2 trades_ok=False
+[2026-02-26 15:23:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=3 trades_ok=False
+[2026-02-26 15:25:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=4 trades_ok=False
+[2026-02-26 15:27:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=6 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=5 trades_ok=False
+[2026-02-26 15:29:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=7 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=6 trades_ok=False
+[2026-02-26 15:30:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=7 trades_ok=False
+[2026-02-26 15:32:24] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 15:33:14] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 15:33:14] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=1 skipped=1
+[2026-02-26 15:36:17] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=2 reward=-2226.213766 metric=-2226.213766 best=nan no_improve=0 eps=0.010000
+[2026-02-26 15:39:25] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=4 reward=-2930.813947 metric=-2930.813947 best=-2226.213766 no_improve=0 eps=0.010000
+[2026-02-26 15:42:34] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=6 reward=-1664.148720 metric=-1664.148720 best=-2226.213766 no_improve=1 eps=0.010000
+[2026-02-26 15:45:42] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=8 reward=-617.984246 metric=-617.984246 best=-1664.148720 no_improve=0 eps=0.010000
+[2026-02-26 15:48:50] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=10 reward=-236.753214 metric=-236.753214 best=-617.984246 no_improve=0 eps=0.010000
+[2026-02-26 15:51:55] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=12 reward=-271.328323 metric=-271.328323 best=-236.753214 no_improve=0 eps=0.010000
+[2026-02-26 15:55:03] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=14 reward=-134.719541 metric=-134.719541 best=-236.753214 no_improve=1 eps=0.010000
+[2026-02-26 15:58:12] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=16 reward=-141.338993 metric=-141.338993 best=-134.719541 no_improve=0 eps=0.010000
+[2026-02-26 16:01:20] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=18 reward=-125.107298 metric=-125.107298 best=-134.719541 no_improve=1 eps=0.010000
+[2026-02-26 16:04:28] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=20 reward=-587.678512 metric=-587.678512 best=-125.107298 no_improve=0 eps=0.010000
+[2026-02-26 16:06:54] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=22 reward=-361.339082 metric=-361.339082 best=-125.107298 no_improve=1 eps=0.010000
+[2026-02-26 16:09:06] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=24 reward=-154.798952 metric=-154.798952 best=-125.107298 no_improve=2 eps=0.010000
+[2026-02-26 16:11:17] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=26 reward=-694.355608 metric=-694.355608 best=-125.107298 no_improve=3 eps=0.010000
+[2026-02-26 16:13:28] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=28 reward=-732.622731 metric=-732.622731 best=-125.107298 no_improve=4 eps=0.010000
+[2026-02-26 16:15:40] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=30 reward=-198.011266 metric=-198.011266 best=-125.107298 no_improve=5 eps=0.010000
+[2026-02-26 16:17:52] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=32 reward=-339.699764 metric=-339.699764 best=-125.107298 no_improve=6 eps=0.010000
+[2026-02-26 16:20:04] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=34 reward=-294.831047 metric=-294.831047 best=-125.107298 no_improve=7 eps=0.010000
+[2026-02-26 16:20:04] [PredictiveDQNTrain] [INFO] [PRED-INF] Loaded best discrete checkpoint for inference: predictive_dqn
+[2026-02-26 16:20:06] [PredictiveDQNTrain] [WARNING] [PRED-COLLAPSE] job=pred_paper variant=paper x2_nunique=1 x2_std=0.000000000000
+[2026-02-26 16:20:06] [MainPipeline] [INFO] [PHASE B] Completed pred_paper (reason=collapsed_output, episodes=34)
+[2026-02-26 16:20:06] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 2811.8443063218147, 'budget_sec': 300.0, 'stopped_reason': 'completed'}
+[2026-02-26 16:33:49] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 16:34:39] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 16:34:39] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=1 skipped=1
+[2026-02-26 16:36:39] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=2 reward=-19265.653153 metric=-19265.653153 best=nan no_improve=0 eps=0.990025 unique_actions=1
+[2026-02-26 16:38:38] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=4 reward=-19809.600316 metric=-19809.600316 best=nan no_improve=1 eps=0.980150 unique_actions=1
+[2026-02-26 16:40:36] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=6 reward=-20014.532154 metric=-20014.532154 best=nan no_improve=2 eps=0.970373 unique_actions=1
+[2026-02-26 16:42:35] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=8 reward=-19638.254282 metric=-19638.254282 best=nan no_improve=3 eps=0.960693 unique_actions=1
+[2026-02-26 16:44:34] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=10 reward=-19710.497580 metric=-19710.497580 best=nan no_improve=4 eps=0.951110 unique_actions=1
+[2026-02-26 16:46:33] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=12 reward=-20395.308516 metric=-20395.308516 best=nan no_improve=5 eps=0.941623 unique_actions=1
+[2026-02-26 16:48:32] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=14 reward=-19176.785366 metric=-19176.785366 best=nan no_improve=6 eps=0.932230 unique_actions=1
+[2026-02-26 16:50:32] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=16 reward=-19479.057565 metric=-19479.057565 best=nan no_improve=7 eps=0.922931 unique_actions=1
+[2026-02-26 16:50:32] [PredictiveDQNTrain] [INFO] [PRED-INF] Loaded discrete checkpoint for inference: predictive_dqn_best_diverse
+[2026-02-26 16:50:37] [PredictiveDQNTrain] [WARNING] [PRED-COLLAPSE] job=pred_paper variant=paper x2_nunique=1 x2_std=0.000000000000
+[2026-02-26 16:50:38] [MainPipeline] [INFO] [PHASE B] Completed pred_paper (reason=collapsed_output, episodes=16)
+[2026-02-26 16:50:38] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 958.9026511614211, 'budget_sec': 300.0, 'stopped_reason': 'completed'}
+[2026-02-26 17:22:06] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 17:22:55] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 17:22:55] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=1 skipped=1
+[2026-02-26 17:24:55] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=2 reward=-19265.653153 metric=-19265.653153 best=nan no_improve=0 eps=0.990025 unique_actions=1
+[2026-02-26 17:26:40] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=4 reward=-19809.600316 metric=-19809.600316 best=nan no_improve=1 eps=0.980150 unique_actions=1
+[2026-02-26 17:28:24] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=6 reward=-20014.532154 metric=-20014.532154 best=nan no_improve=1 eps=0.970373 unique_actions=1
+[2026-02-26 17:30:09] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=8 reward=-19638.254282 metric=-19638.254282 best=nan no_improve=1 eps=0.960693 unique_actions=1
+[2026-02-26 17:31:55] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=10 reward=-19710.497580 metric=-19710.497580 best=nan no_improve=1 eps=0.951110 unique_actions=1
+[2026-02-26 17:33:40] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=12 reward=-20395.308516 metric=-20395.308516 best=nan no_improve=1 eps=0.941623 unique_actions=1
+[2026-02-26 17:35:25] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=14 reward=-19176.785366 metric=-19176.785366 best=nan no_improve=1 eps=0.932230 unique_actions=1
+[2026-02-26 17:36:01] [MainPipeline] [INFO] [PHASE B] Predictive action grid: min=-100.0 max=100.0 step=0.5 size=401
+[2026-02-26 17:36:01] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 17:36:50] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 17:36:50] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=1 skipped=1
+[2026-02-26 17:38:29] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=2 reward=-20540.649994 metric=-20540.649994 best=nan no_improve=0 eps=0.990025 unique_actions=5 action_std=4.829934
+[2026-02-26 17:40:07] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=4 reward=-20246.232321 metric=-20246.232321 best=-20540.649994 no_improve=0 eps=0.980150 unique_actions=3 action_std=6.690537
+[2026-02-26 17:41:46] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=6 reward=-19486.801238 metric=-19486.801238 best=-20246.232321 no_improve=0 eps=0.970373 unique_actions=4 action_std=5.724019
+[2026-02-26 17:43:25] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=8 reward=-18934.958327 metric=-18934.958327 best=-19486.801238 no_improve=0 eps=0.960693 unique_actions=1 action_std=0.000000
+[2026-02-26 17:45:04] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=10 reward=-20373.477145 metric=-20373.477145 best=-19486.801238 no_improve=1 eps=0.951110 unique_actions=3 action_std=0.563073
+[2026-02-26 17:46:43] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=12 reward=-18720.364515 metric=-18720.364515 best=-19486.801238 no_improve=1 eps=0.941623 unique_actions=1 action_std=0.000000
+[2026-02-26 17:46:43] [PredictiveDQNTrain] [WARNING] [PRED-RESCUE] job=pred_paper variant=paper ep=12 collapse_streak=3 -> perturb_head+boost_eps(0.942)
+[2026-02-26 17:48:22] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=14 reward=-19284.020725 metric=-19284.020725 best=-19486.801238 no_improve=1 eps=0.932230 unique_actions=2 action_std=24.299491
+[2026-02-26 17:50:01] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=16 reward=-20288.150449 metric=-20288.150449 best=-19284.020725 no_improve=0 eps=0.922931 unique_actions=3 action_std=2.202368
+[2026-02-26 17:51:40] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=18 reward=-19851.453940 metric=-19851.453940 best=-19284.020725 no_improve=1 eps=0.913725 unique_actions=2 action_std=0.836090
+[2026-02-26 17:53:20] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=20 reward=-20936.790740 metric=-20936.790740 best=-19284.020725 no_improve=1 eps=0.904610 unique_actions=4 action_std=8.309021
+[2026-02-26 17:54:59] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=22 reward=-18508.450588 metric=-18508.450588 best=-19284.020725 no_improve=2 eps=0.895587 unique_actions=6 action_std=27.994389
+[2026-02-26 17:56:38] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=24 reward=-18452.370753 metric=-18452.370753 best=-18508.450588 no_improve=0 eps=0.886654 unique_actions=6 action_std=11.860617
+[2026-02-26 17:58:18] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=26 reward=-21207.569430 metric=-21207.569430 best=-18452.370753 no_improve=0 eps=0.877809 unique_actions=3 action_std=3.488226
+[2026-02-26 17:59:57] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=28 reward=-20516.819356 metric=-20516.819356 best=-18452.370753 no_improve=1 eps=0.869053 unique_actions=7 action_std=16.149072
+[2026-02-26 18:01:36] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=30 reward=-19521.408260 metric=-19521.408260 best=-18452.370753 no_improve=2 eps=0.860384 unique_actions=2 action_std=2.257444
+[2026-02-26 18:03:15] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=32 reward=-19842.821914 metric=-19842.821914 best=-18452.370753 no_improve=3 eps=0.851802 unique_actions=3 action_std=13.448229
+[2026-02-26 18:04:54] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=34 reward=-19997.508341 metric=-19997.508341 best=-18452.370753 no_improve=4 eps=0.843305 unique_actions=3 action_std=12.093882
+[2026-02-26 18:06:33] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=36 reward=-18696.665589 metric=-18696.665589 best=-18452.370753 no_improve=5 eps=0.834893 unique_actions=4 action_std=9.010111
+[2026-02-26 18:08:12] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=38 reward=-21350.033353 metric=-21350.033353 best=-18452.370753 no_improve=6 eps=0.826565 unique_actions=6 action_std=33.489620
+[2026-02-26 18:09:51] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=40 reward=-19473.145776 metric=-19473.145776 best=-18452.370753 no_improve=7 eps=0.818320 unique_actions=7 action_std=12.993379
+[2026-02-26 18:09:51] [PredictiveDQNTrain] [INFO] [PRED-INF] Loaded discrete checkpoint for inference: predictive_dqn
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE B] Completed pred_paper (reason=early_stop, episodes=40)
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 1980.5628897813149, 'budget_sec': 5400.0, 'stopped_reason': 'completed'}
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE C/D] Target grid: alpha=[0.3, 0.55, 0.8] omega=[16]
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=9 workers=1 per_job_minutes=40
+[2026-02-26 18:09:51] [MainPipeline] [INFO] [PHASE C/D] Running batch 1: jobs=1
+[2026-02-26 18:10:46] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 18:11:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=1 trades_ok=False
+[2026-02-26 18:12:38] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=3 roi=-0.155524 sr=-0.090879 trades=12 metric=-0.155524 best=nan no_improve=2 trades_ok=False
+[2026-02-26 18:13:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=3 trades_ok=False
+[2026-02-26 18:14:30] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=4 trades_ok=False
+[2026-02-26 18:15:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=6 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=5 trades_ok=False
+[2026-02-26 18:16:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=7 roi=-4.590868 sr=-0.462100 trades=358 metric=-4.590868 best=nan no_improve=6 trades_ok=True
+[2026-02-26 18:17:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=8 roi=-1.138552 sr=-0.247236 trades=92 metric=-1.138552 best=-4.590868 no_improve=0 trades_ok=True
+[2026-02-26 18:18:16] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=9 roi=-9.333670 sr=-0.344971 trades=686 metric=-9.333670 best=-1.138552 no_improve=0 trades_ok=True
+[2026-02-26 18:19:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=10 roi=-0.139406 sr=-0.090452 trades=12 metric=-0.139406 best=-1.138552 no_improve=1 trades_ok=False
+[2026-02-26 18:20:09] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=11 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-1.138552 no_improve=2 trades_ok=False
+[2026-02-26 18:21:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=12 roi=-19.219550 sr=-0.322874 trades=552 metric=-19.219550 best=-1.138552 no_improve=3 trades_ok=True
+[2026-02-26 18:22:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=13 roi=-17.680117 sr=-0.341489 trades=628 metric=-17.680117 best=-1.138552 no_improve=4 trades_ok=True
+[2026-02-26 18:22:59] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=14 roi=-15.036584 sr=-0.042194 trades=316 metric=-15.036584 best=-1.138552 no_improve=5 trades_ok=True
+[2026-02-26 18:23:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=15 roi=-0.150798 sr=0.000000 trades=3 metric=-0.150798 best=-1.138552 no_improve=6 trades_ok=False
+[2026-02-26 18:24:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=16 roi=-16.701781 sr=-0.120503 trades=342 metric=-16.701781 best=-1.138552 no_improve=7 trades_ok=True
+[2026-02-26 18:25:48] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=17 roi=-16.047999 sr=-0.137060 trades=374 metric=-16.047999 best=-1.138552 no_improve=8 trades_ok=True
+[2026-02-26 18:26:44] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=18 roi=-1.206186 sr=-0.248988 trades=94 metric=-1.206186 best=-1.138552 no_improve=9 trades_ok=True
+[2026-02-26 18:27:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=19 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-1.138552 no_improve=10 trades_ok=False
+[2026-02-26 18:28:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=20 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-1.138552 no_improve=11 trades_ok=False
+[2026-02-26 18:29:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=21 roi=-0.655331 sr=0.037320 trades=9 metric=-0.655331 best=-1.138552 no_improve=12 trades_ok=False
+[2026-02-26 18:30:30] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=22 roi=-0.801418 sr=-0.199467 trades=62 metric=-0.801418 best=-1.138552 no_improve=13 trades_ok=True
+[2026-02-26 18:31:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=23 roi=-0.032579 sr=-0.037320 trades=2 metric=-0.032579 best=-0.801418 no_improve=0 trades_ok=False
+[2026-02-26 18:32:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=24 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.801418 no_improve=1 trades_ok=False
+[2026-02-26 18:33:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=25 roi=-8.873903 sr=-0.315116 trades=717 metric=-8.873903 best=-0.801418 no_improve=2 trades_ok=True
+[2026-02-26 18:34:16] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=26 roi=-4.683651 sr=-0.443790 trades=326 metric=-4.683651 best=-0.801418 no_improve=3 trades_ok=True
+[2026-02-26 18:35:12] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=27 roi=-0.194351 sr=-0.097915 trades=14 metric=-0.194351 best=-0.801418 no_improve=4 trades_ok=False
+[2026-02-26 18:36:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=28 roi=-0.343595 sr=-0.132999 trades=26 metric=-0.343595 best=-0.801418 no_improve=5 trades_ok=True
+[2026-02-26 18:37:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=29 roi=-0.845089 sr=-0.198306 trades=64 metric=-0.845089 best=-0.343595 no_improve=0 trades_ok=True
+[2026-02-26 18:38:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.343595 no_improve=1 trades_ok=False
+[2026-02-26 18:38:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=31 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.343595 no_improve=2 trades_ok=False
+[2026-02-26 18:39:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=32 roi=-1.705721 sr=-0.269200 trades=126 metric=-1.705721 best=-0.343595 no_improve=3 trades_ok=True
+[2026-02-26 18:40:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=33 roi=-20.207707 sr=-0.340786 trades=711 metric=-20.207707 best=-0.343595 no_improve=4 trades_ok=True
+[2026-02-26 18:41:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=34 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.343595 no_improve=5 trades_ok=False
+[2026-02-26 18:42:42] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=35 roi=-0.036282 sr=-0.037320 trades=2 metric=-0.036282 best=-0.343595 no_improve=6 trades_ok=False
+[2026-02-26 18:43:38] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=36 roi=-12.385818 sr=0.000000 trades=111 metric=-12.385818 best=-0.343595 no_improve=7 trades_ok=True
+[2026-02-26 18:44:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=37 roi=-12.470437 sr=-0.023929 trades=117 metric=-12.470437 best=-0.343595 no_improve=8 trades_ok=True
+[2026-02-26 18:45:30] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=38 roi=-7.089181 sr=0.048519 trades=83 metric=-7.089181 best=-0.343595 no_improve=9 trades_ok=True
+[2026-02-26 18:46:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=39 roi=-6.091851 sr=0.050010 trades=73 metric=-6.091851 best=-0.343595 no_improve=10 trades_ok=True
+[2026-02-26 18:47:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=40 roi=-17.572505 sr=-0.213115 trades=286 metric=-17.572505 best=-0.343595 no_improve=11 trades_ok=True
+[2026-02-26 18:48:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=41 roi=-3.103286 sr=-0.393301 trades=241 metric=-3.103286 best=-0.343595 no_improve=12 trades_ok=True
+[2026-02-26 18:49:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=42 roi=-18.657415 sr=-0.377001 trades=637 metric=-18.657415 best=-0.343595 no_improve=13 trades_ok=True
+[2026-02-26 18:50:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=43 roi=-0.412732 sr=-0.134627 trades=34 metric=-0.412732 best=-0.343595 no_improve=14 trades_ok=True
+[2026-02-26 18:50:13] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a30_o16 reason=time_budget episodes=43
+[2026-02-26 18:50:13] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o16 (reason=time_budget, best=-0.343595)
+[2026-02-26 18:50:13] [MainPipeline] [INFO] [PHASE C/D] Running batch 2: jobs=1
+[2026-02-26 18:51:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=1 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=nan no_improve=0 trades_ok=True
+[2026-02-26 18:52:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=2 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-5.851033 no_improve=0 trades_ok=True
+[2026-02-26 18:53:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=3 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-5.851033 no_improve=1 trades_ok=True
+[2026-02-26 18:53:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=2 trades_ok=False
+[2026-02-26 18:54:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=5 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-5.851033 no_improve=3 trades_ok=True
+[2026-02-26 18:55:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=6 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-5.851033 no_improve=4 trades_ok=True
+[2026-02-26 18:56:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=7 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-5.851033 no_improve=5 trades_ok=True
+[2026-02-26 18:57:42] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=6 trades_ok=False
+[2026-02-26 18:58:38] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=9 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=7 trades_ok=False
+[2026-02-26 18:59:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=10 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=8 trades_ok=False
+[2026-02-26 19:00:31] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=11 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=9 trades_ok=False
+[2026-02-26 19:01:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=12 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=10 trades_ok=False
+[2026-02-26 19:02:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=13 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=11 trades_ok=False
+[2026-02-26 19:03:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=14 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=12 trades_ok=False
+[2026-02-26 19:04:16] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=13 trades_ok=False
+[2026-02-26 19:05:12] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=16 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-5.851033 no_improve=14 trades_ok=False
+[2026-02-26 19:18:41] [MainPipeline] [INFO] [PHASE B] Predictive action grid: min=-100.0 max=100.0 step=0.2 size=1001
+[2026-02-26 19:18:41] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 19:19:30] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 19:19:30] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 20:13:08] [MainPipeline] [INFO] [PHASE B] Predictive action grid: min=-100.0 max=100.0 step=0.2 size=1001
+[2026-02-26 20:13:08] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 20:13:59] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 20:13:59] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 20:14:22] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=2 reward=162.570007 metric=162.570007 best=nan no_improve=0 eps=0.130668 unique_actions=1 action_std=0.000000
+[2026-02-26 20:14:52] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=4 reward=-2143.238770 metric=-2143.238770 best=nan no_improve=1 eps=0.016735 unique_actions=3 action_std=0.686111
+[2026-02-26 20:15:23] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=6 reward=393.485596 metric=393.485596 best=-2143.238770 no_improve=0 eps=0.010000 unique_actions=2 action_std=0.469211
+[2026-02-26 20:15:54] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=8 reward=2681.689575 metric=2681.689575 best=393.485596 no_improve=0 eps=0.010000 unique_actions=2 action_std=0.673745
+[2026-02-26 20:16:25] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=10 reward=77.030396 metric=77.030396 best=2681.689575 no_improve=0 eps=0.010000 unique_actions=2 action_std=0.267594
+[2026-02-26 20:16:56] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=12 reward=231.680450 metric=231.680450 best=2681.689575 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.204403
+[2026-02-26 20:17:27] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=14 reward=-1.419373 metric=-1.419373 best=2681.689575 no_improve=2 eps=0.010000 unique_actions=3 action_std=0.615304
+[2026-02-26 20:17:58] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=16 reward=1871.378540 metric=1871.378540 best=2681.689575 no_improve=3 eps=0.010000 unique_actions=2 action_std=0.087537
+[2026-02-26 20:18:29] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=18 reward=153.740234 metric=153.740234 best=2681.689575 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.731928
+[2026-02-26 20:19:00] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=20 reward=88.670685 metric=88.670685 best=2681.689575 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.334436
+[2026-02-26 20:19:31] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=22 reward=-2517.740234 metric=-2517.740234 best=2681.689575 no_improve=3 eps=0.010000 unique_actions=2 action_std=0.462237
+[2026-02-26 20:20:01] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=24 reward=2108.895020 metric=2108.895020 best=2681.689575 no_improve=4 eps=0.010000 unique_actions=2 action_std=0.256854
+[2026-02-26 20:20:32] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=26 reward=3365.992432 metric=3365.992432 best=2681.689575 no_improve=5 eps=0.010000 unique_actions=2 action_std=0.323415
+[2026-02-26 20:21:03] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=28 reward=268.359863 metric=268.359863 best=3365.992432 no_improve=0 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:21:34] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=30 reward=74.989746 metric=74.989746 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.990933
+[2026-02-26 20:22:05] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=32 reward=20.639954 metric=20.639954 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:22:36] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=34 reward=2796.143555 metric=2796.143555 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:23:06] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=36 reward=267.214478 metric=267.214478 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:23:06] [TradeDQNTrain] [WARNING] [TRADE-RESCUE] job=trade ep=36 collapse_streak=3 -> perturb_head+boost_eps(0.500)
+[2026-02-26 20:23:33] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=38 reward=319.249756 metric=319.249756 best=3365.992432 no_improve=1 eps=0.064037 unique_actions=2 action_std=0.607100
+[2026-02-26 20:24:03] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=40 reward=760.191406 metric=760.191406 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=3 action_std=0.677179
+[2026-02-26 20:24:34] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=42 reward=148.100098 metric=148.100098 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:25:05] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=44 reward=318.899597 metric=318.899597 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.713777
+[2026-02-26 20:25:36] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=46 reward=-82.660889 metric=-82.660889 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.158872
+[2026-02-26 20:26:07] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=48 reward=-0.170166 metric=-0.170166 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:26:38] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=50 reward=-7.880219 metric=-7.880219 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.990135
+[2026-02-26 20:27:08] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=52 reward=-2124.929993 metric=-2124.929993 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.458536
+[2026-02-26 20:27:39] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=54 reward=-3.760010 metric=-3.760010 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:28:10] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=56 reward=-2208.102539 metric=-2208.102539 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.633781
+[2026-02-26 20:28:41] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=58 reward=-817.550293 metric=-817.550293 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.081687
+[2026-02-26 20:29:12] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=60 reward=112.089783 metric=112.089783 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.957683
+[2026-02-26 20:29:42] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=62 reward=-2971.251709 metric=-2971.251709 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.177665
+[2026-02-26 20:30:13] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=64 reward=323.701172 metric=323.701172 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:30:44] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=66 reward=-379.337402 metric=-379.337402 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.201227
+[2026-02-26 20:31:14] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=68 reward=-143.869965 metric=-143.869965 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=3 action_std=0.303639
+[2026-02-26 20:31:45] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=70 reward=-3.929932 metric=-3.929932 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=2 action_std=0.339796
+[2026-02-26 20:32:15] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=72 reward=-24.181152 metric=-24.181152 best=3365.992432 no_improve=4 eps=0.010000 unique_actions=2 action_std=0.350239
+[2026-02-26 20:32:46] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=74 reward=8.699982 metric=8.699982 best=3365.992432 no_improve=5 eps=0.010000 unique_actions=2 action_std=0.374905
+[2026-02-26 20:33:17] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=76 reward=7519.233887 metric=7519.233887 best=3365.992432 no_improve=6 eps=0.010000 unique_actions=2 action_std=0.087285
+[2026-02-26 20:33:48] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=78 reward=-377.324219 metric=-377.324219 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:39:24] [MainPipeline] [INFO] [PHASE B] Predictive action grid: min=-100.0 max=100.0 step=0.2 size=1001
+[2026-02-26 20:39:25] [MainPipeline] [INFO] [PHASE A] Building cached datasets
+[2026-02-26 20:40:14] [MainPipeline] [INFO] [PHASE B] Training Trade-DQN / Predictive variants
+[2026-02-26 20:40:14] [MainPipeline] [INFO] [PHASE B] Jobs queued: total=2 runnable=2 skipped=0
+[2026-02-26 20:40:46] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=80 reward=-113.250488 metric=-113.250488 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:41:17] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=82 reward=595.644653 metric=595.644653 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.614906
+[2026-02-26 20:41:48] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=84 reward=754.168945 metric=754.168945 best=3365.992432 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.267594
+[2026-02-26 20:42:19] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=86 reward=-374.549805 metric=-374.549805 best=3365.992432 no_improve=3 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:42:50] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=88 reward=8103.939941 metric=8103.939941 best=3365.992432 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.831763
+[2026-02-26 20:43:20] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=90 reward=-528.749939 metric=-528.749939 best=8103.939941 no_improve=0 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:43:51] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=92 reward=254.479828 metric=254.479828 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:44:22] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=94 reward=1243.788269 metric=1243.788269 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.115515
+[2026-02-26 20:44:53] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=96 reward=80.510742 metric=80.510742 best=8103.939941 no_improve=2 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:45:24] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=98 reward=56.570129 metric=56.570129 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=3 action_std=0.783272
+[2026-02-26 20:45:54] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=100 reward=9.920166 metric=9.920166 best=8103.939941 no_improve=2 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:46:25] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=102 reward=800.839844 metric=800.839844 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=2 action_std=0.345105
+[2026-02-26 20:46:56] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=104 reward=-954.859985 metric=-954.859985 best=8103.939941 no_improve=2 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:47:27] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=106 reward=6037.441406 metric=6037.441406 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:47:57] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=108 reward=-33.790039 metric=-33.790039 best=8103.939941 no_improve=1 eps=0.010000 unique_actions=1 action_std=0.000000
+[2026-02-26 20:47:57] [TradeDQNTrain] [WARNING] [TRADE-RESCUE] job=trade ep=108 collapse_streak=3 -> perturb_head+boost_eps(0.500)
+[2026-02-26 20:48:24] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=110 reward=326.320251 metric=326.320251 best=8103.939941 no_improve=1 eps=0.064359 unique_actions=1 action_std=0.000000
+[2026-02-26 20:48:24] [TradeDQNTrain] [WARNING] [TRADE-RESCUE] job=trade ep=110 collapse_streak=4 -> perturb_head+boost_eps(0.500)
+[2026-02-26 20:48:51] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=112 reward=181.660156 metric=181.660156 best=8103.939941 no_improve=1 eps=0.064037 unique_actions=2 action_std=0.427619
+[2026-02-26 20:49:22] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=114 reward=47.520264 metric=47.520264 best=8103.939941 no_improve=2 eps=0.010000 unique_actions=2 action_std=0.500662
+[2026-02-26 20:49:52] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=116 reward=-2006.059326 metric=-2006.059326 best=8103.939941 no_improve=3 eps=0.010000 unique_actions=2 action_std=0.503966
+[2026-02-26 20:50:23] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=118 reward=-2301.450684 metric=-2301.450684 best=8103.939941 no_improve=4 eps=0.010000 unique_actions=2 action_std=0.370123
+[2026-02-26 20:50:53] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=120 reward=3.909943 metric=3.909943 best=8103.939941 no_improve=5 eps=0.010000 unique_actions=2 action_std=0.493965
+[2026-02-26 20:51:24] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=122 reward=805.452637 metric=805.452637 best=8103.939941 no_improve=6 eps=0.010000 unique_actions=2 action_std=0.532470
+[2026-02-26 20:51:55] [TradeDQNTrain] [INFO] [TRADE-EVAL] job=trade variant=paper ep=124 reward=-185.751221 metric=-185.751221 best=8103.939941 no_improve=7 eps=0.010000 unique_actions=2 action_std=0.535509
+[2026-02-26 20:51:55] [TradeDQNTrain] [INFO] [TRADE-INF] Loaded checkpoint for inference: trade_dqn
+[2026-02-26 20:55:38] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=2 reward=-39507.846424 metric=-39507.846424 best=nan no_improve=0 eps=0.990025 unique_actions=6 action_std=4.700485
+[2026-02-26 20:59:21] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=4 reward=-39422.325176 metric=-39422.325176 best=-39507.846424 no_improve=0 eps=0.980150 unique_actions=4 action_std=6.263173
+[2026-02-26 21:03:03] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=6 reward=-37133.155904 metric=-37133.155904 best=-39422.325176 no_improve=0 eps=0.970373 unique_actions=1 action_std=0.000000
+[2026-02-26 21:06:45] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=8 reward=-39128.611130 metric=-39128.611130 best=-39422.325176 no_improve=1 eps=0.960693 unique_actions=2 action_std=24.829596
+[2026-02-26 21:10:29] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=10 reward=-40771.386097 metric=-40771.386097 best=-39128.611130 no_improve=0 eps=0.951110 unique_actions=8 action_std=17.208829
+[2026-02-26 21:14:12] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=12 reward=-39262.053628 metric=-39262.053628 best=-39128.611130 no_improve=1 eps=0.941623 unique_actions=5 action_std=10.390882
+[2026-02-26 21:17:55] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=14 reward=-38306.680126 metric=-38306.680126 best=-39128.611130 no_improve=2 eps=0.932230 unique_actions=1 action_std=0.000000
+[2026-02-26 21:21:38] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=16 reward=-37618.417862 metric=-37618.417862 best=-39128.611130 no_improve=1 eps=0.922931 unique_actions=7 action_std=21.621562
+[2026-02-26 21:25:22] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=18 reward=-35492.984313 metric=-35492.984313 best=-37618.417862 no_improve=0 eps=0.913725 unique_actions=4 action_std=9.914888
+[2026-02-26 21:29:05] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=20 reward=-40524.660992 metric=-40524.660992 best=-35492.984313 no_improve=0 eps=0.904610 unique_actions=7 action_std=15.913916
+[2026-02-26 21:32:49] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=22 reward=-38126.827978 metric=-38126.827978 best=-35492.984313 no_improve=1 eps=0.895587 unique_actions=1 action_std=0.000000
+[2026-02-26 21:36:32] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=24 reward=-38195.338617 metric=-38195.338617 best=-35492.984313 no_improve=1 eps=0.886654 unique_actions=3 action_std=23.290427
+[2026-02-26 21:40:14] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=26 reward=-41066.011037 metric=-41066.011037 best=-35492.984313 no_improve=2 eps=0.877809 unique_actions=4 action_std=19.242572
+[2026-02-26 21:43:57] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=28 reward=-39057.359105 metric=-39057.359105 best=-35492.984313 no_improve=3 eps=0.869053 unique_actions=5 action_std=6.706984
+[2026-02-26 21:47:41] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=30 reward=-40171.053146 metric=-40171.053146 best=-35492.984313 no_improve=4 eps=0.860384 unique_actions=3 action_std=19.975602
+[2026-02-26 21:51:23] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=32 reward=-41746.380822 metric=-41746.380822 best=-35492.984313 no_improve=5 eps=0.851802 unique_actions=3 action_std=13.614336
+[2026-02-26 21:55:05] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=34 reward=-42507.388483 metric=-42507.388483 best=-35492.984313 no_improve=6 eps=0.843305 unique_actions=2 action_std=1.388024
+[2026-02-26 21:58:48] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=36 reward=-40084.259620 metric=-40084.259620 best=-35492.984313 no_improve=7 eps=0.834893 unique_actions=1 action_std=0.000000
+[2026-02-26 22:02:31] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=38 reward=-40201.242704 metric=-40201.242704 best=-35492.984313 no_improve=1 eps=0.826565 unique_actions=1 action_std=0.000000
+[2026-02-26 22:06:13] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=40 reward=-40331.142269 metric=-40331.142269 best=-35492.984313 no_improve=1 eps=0.818320 unique_actions=2 action_std=41.867073
+[2026-02-26 22:10:00] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=42 reward=-39498.493438 metric=-39498.493438 best=-35492.984313 no_improve=2 eps=0.810157 unique_actions=4 action_std=42.141425
+[2026-02-26 22:13:48] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=44 reward=-32383.491657 metric=-32383.491657 best=-35492.984313 no_improve=3 eps=0.802076 unique_actions=5 action_std=21.780204
+[2026-02-26 22:17:37] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=46 reward=-39043.015186 metric=-39043.015186 best=-32383.491657 no_improve=0 eps=0.794075 unique_actions=4 action_std=23.853628
+[2026-02-26 22:21:24] [PredictiveDQNTrain] [INFO] [PRED-EVAL] job=pred_paper variant=paper ep=48 reward=-33639.038966 metric=-33639.038966 best=-32383.491657 no_improve=1 eps=0.786154 unique_actions=11 action_std=11.210921
+[2026-02-26 22:23:18] [PredictiveDQNTrain] [INFO] [PRED-INF] Loaded discrete checkpoint for inference: predictive_dqn
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE B] Completed trade (reason=early_stop, episodes=124)
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE B] Completed pred_paper (reason=time_budget, episodes=49)
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE B] Finished with status: {'stage': 'trade', 'elapsed_sec': 6184.111236994155, 'budget_sec': 5400.0, 'stopped_reason': 'completed'}
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE C/D] Target grid: alpha=[0.3, 0.55, 0.8] omega=[16]
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE C/D] Running Main-DQN baseline + improvements grid
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE C/D] Main jobs prepared: total=9 workers=1 per_job_minutes=40
+[2026-02-26 22:23:18] [MainPipeline] [INFO] [PHASE C/D] Running batch 1: jobs=1
+[2026-02-26 22:24:12] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 22:25:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=2 roi=-20.363027 sr=-0.346658 trades=613 metric=-20.363027 best=nan no_improve=1 trades_ok=True
+[2026-02-26 22:26:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-20.363027 no_improve=0 trades_ok=False
+[2026-02-26 22:27:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=4 roi=-19.337443 sr=-0.335138 trades=522 metric=-19.337443 best=-20.363027 no_improve=1 trades_ok=True
+[2026-02-26 22:27:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-19.337443 no_improve=0 trades_ok=False
+[2026-02-26 22:28:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=6 roi=-16.736502 sr=-0.155164 trades=403 metric=-16.736502 best=-19.337443 no_improve=1 trades_ok=True
+[2026-02-26 22:29:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=7 roi=-7.114145 sr=-0.212269 trades=118 metric=-7.114145 best=-16.736502 no_improve=0 trades_ok=True
+[2026-02-26 22:30:47] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=8 roi=-18.356087 sr=-0.228030 trades=289 metric=-18.356087 best=-7.114145 no_improve=0 trades_ok=True
+[2026-02-26 22:31:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=9 roi=-13.267833 sr=0.000000 trades=110 metric=-13.267833 best=-7.114145 no_improve=1 trades_ok=True
+[2026-02-26 22:32:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=10 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.114145 no_improve=2 trades_ok=False
+[2026-02-26 22:33:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=11 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.114145 no_improve=3 trades_ok=False
+[2026-02-26 22:34:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=12 roi=-0.041878 sr=-0.052790 trades=4 metric=-0.041878 best=-7.114145 no_improve=4 trades_ok=False
+[2026-02-26 22:35:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=13 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.114145 no_improve=5 trades_ok=False
+[2026-02-26 22:36:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=14 roi=-0.057716 sr=-0.052453 trades=4 metric=-0.057716 best=-7.114145 no_improve=6 trades_ok=False
+[2026-02-26 22:37:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-7.114145 no_improve=7 trades_ok=False
+[2026-02-26 22:38:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=16 roi=-9.770985 sr=-0.322802 trades=711 metric=-9.770985 best=-7.114145 no_improve=8 trades_ok=True
+[2026-02-26 22:39:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=17 roi=-4.666664 sr=-0.468190 trades=352 metric=-4.666664 best=-7.114145 no_improve=9 trades_ok=True
+[2026-02-26 22:40:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=18 roi=-0.036282 sr=-0.037320 trades=2 metric=-0.036282 best=-4.666664 no_improve=0 trades_ok=False
+[2026-02-26 22:41:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=19 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-4.666664 no_improve=1 trades_ok=False
+[2026-02-26 22:41:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=20 roi=-15.098852 sr=0.047214 trades=176 metric=-15.098852 best=-4.666664 no_improve=2 trades_ok=True
+[2026-02-26 22:42:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=21 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-4.666664 no_improve=3 trades_ok=False
+[2026-02-26 22:43:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=22 roi=-14.073894 sr=-0.063566 trades=193 metric=-14.073894 best=-4.666664 no_improve=4 trades_ok=True
+[2026-02-26 22:44:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=23 roi=-12.784663 sr=0.020962 trades=129 metric=-12.784663 best=-4.666664 no_improve=5 trades_ok=True
+[2026-02-26 22:45:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=24 roi=-0.562748 sr=-0.176453 trades=46 metric=-0.562748 best=-4.666664 no_improve=6 trades_ok=True
+[2026-02-26 22:46:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=25 roi=-1.491709 sr=-0.252434 trades=108 metric=-1.491709 best=-0.562748 no_improve=0 trades_ok=True
+[2026-02-26 22:47:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=26 roi=-10.561082 sr=-0.199112 trades=158 metric=-10.561082 best=-0.562748 no_improve=1 trades_ok=True
+[2026-02-26 22:48:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=27 roi=-5.855118 sr=-0.485584 trades=444 metric=-5.855118 best=-0.562748 no_improve=2 trades_ok=True
+[2026-02-26 22:49:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=28 roi=-8.800252 sr=-0.349313 trades=709 metric=-8.800252 best=-0.562748 no_improve=3 trades_ok=True
+[2026-02-26 22:50:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=29 roi=-5.985082 sr=-0.529905 trades=439 metric=-5.985082 best=-0.562748 no_improve=4 trades_ok=True
+[2026-02-26 22:51:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=5 trades_ok=False
+[2026-02-26 22:52:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=31 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=6 trades_ok=False
+[2026-02-26 22:53:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=32 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=7 trades_ok=False
+[2026-02-26 22:54:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=33 roi=-16.973730 sr=-0.262934 trades=398 metric=-16.973730 best=-0.562748 no_improve=8 trades_ok=True
+[2026-02-26 22:54:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=34 roi=-2.228483 sr=-0.346862 trades=174 metric=-2.228483 best=-0.562748 no_improve=9 trades_ok=True
+[2026-02-26 22:55:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=35 roi=-11.952357 sr=0.000000 trades=112 metric=-11.952357 best=-0.562748 no_improve=10 trades_ok=True
+[2026-02-26 22:56:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=36 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=11 trades_ok=False
+[2026-02-26 22:57:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=37 roi=-0.086229 sr=-0.064511 trades=6 metric=-0.086229 best=-0.562748 no_improve=12 trades_ok=False
+[2026-02-26 22:58:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=38 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=13 trades_ok=False
+[2026-02-26 22:59:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=39 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.562748 no_improve=14 trades_ok=False
+[2026-02-26 23:00:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=40 roi=-1.492440 sr=-0.258862 trades=106 metric=-1.492440 best=-0.562748 no_improve=15 trades_ok=True
+[2026-02-26 23:01:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=41 roi=-11.005517 sr=-0.112588 trades=113 metric=-11.005517 best=-0.562748 no_improve=16 trades_ok=True
+[2026-02-26 23:02:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=42 roi=-18.399134 sr=-0.268340 trades=497 metric=-18.399134 best=-0.562748 no_improve=17 trades_ok=True
+[2026-02-26 23:03:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a30_o16 variant=paper method=classic ep=43 roi=-0.348502 sr=-0.120613 trades=26 metric=-0.348502 best=-0.562748 no_improve=18 trades_ok=True
+[2026-02-26 23:03:20] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a30_o16 reason=time_budget episodes=43
+[2026-02-26 23:03:20] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a30_o16 (reason=time_budget, best=-0.348502)
+[2026-02-26 23:03:20] [MainPipeline] [INFO] [PHASE C/D] Running batch 2: jobs=1
+[2026-02-26 23:04:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 23:05:09] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=1 trades_ok=False
+[2026-02-26 23:06:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=2 trades_ok=False
+[2026-02-26 23:07:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=3 trades_ok=False
+[2026-02-26 23:07:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=4 trades_ok=False
+[2026-02-26 23:08:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=6 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=5 trades_ok=False
+[2026-02-26 23:09:47] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=7 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=6 trades_ok=False
+[2026-02-26 23:10:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=7 trades_ok=False
+[2026-02-26 23:11:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=9 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=8 trades_ok=False
+[2026-02-26 23:12:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=10 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=9 trades_ok=False
+[2026-02-26 23:13:30] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=11 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=10 trades_ok=False
+[2026-02-26 23:14:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=12 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=11 trades_ok=False
+[2026-02-26 23:15:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=13 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=12 trades_ok=False
+[2026-02-26 23:16:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=14 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=13 trades_ok=False
+[2026-02-26 23:17:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=14 trades_ok=False
+[2026-02-26 23:18:09] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=16 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=15 trades_ok=False
+[2026-02-26 23:19:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=17 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=16 trades_ok=False
+[2026-02-26 23:20:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=18 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=17 trades_ok=False
+[2026-02-26 23:20:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=19 roi=0.506248 sr=0.090380 trades=18 metric=0.506248 best=nan no_improve=18 trades_ok=False
+[2026-02-26 23:21:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a30_o16 variant=paper method=proposed ep=20 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=19 trades_ok=False
+[2026-02-26 23:21:52] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a30_o16 reason=early_stop ep=20
+[2026-02-26 23:21:54] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a30_o16 reason=early_stop episodes=20
+[2026-02-26 23:21:54] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a30_o16 (reason=early_stop, best=0.000000)
+[2026-02-26 23:21:54] [MainPipeline] [INFO] [PHASE C/D] Running batch 3: jobs=1
+[2026-02-26 23:22:03] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-26 23:22:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=1 trades_ok=False
+[2026-02-26 23:22:20] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=2 trades_ok=False
+[2026-02-26 23:22:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=4 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=nan no_improve=3 trades_ok=False
+[2026-02-26 23:22:37] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=5 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=nan no_improve=4 trades_ok=True
+[2026-02-26 23:22:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=6 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=0 trades_ok=True
+[2026-02-26 23:22:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=7 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=1 trades_ok=True
+[2026-02-26 23:23:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=8 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=2 trades_ok=True
+[2026-02-26 23:23:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=9 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=3 trades_ok=True
+[2026-02-26 23:23:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=10 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=4 trades_ok=True
+[2026-02-26 23:23:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=11 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=5 trades_ok=True
+[2026-02-26 23:23:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=12 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=6 trades_ok=True
+[2026-02-26 23:23:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=13 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=7 trades_ok=True
+[2026-02-26 23:23:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=14 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=8 trades_ok=True
+[2026-02-26 23:24:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=15 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=9 trades_ok=True
+[2026-02-26 23:24:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=16 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=10 trades_ok=True
+[2026-02-26 23:24:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=17 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=11 trades_ok=True
+[2026-02-26 23:24:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=18 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=12 trades_ok=True
+[2026-02-26 23:24:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=19 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=13 trades_ok=True
+[2026-02-26 23:24:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=20 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=14 trades_ok=True
+[2026-02-26 23:24:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=21 roi=-9.623924 sr=-0.334740 trades=228 metric=-9.623924 best=-18.288827 no_improve=15 trades_ok=True
+[2026-02-26 23:25:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=22 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=0 trades_ok=False
+[2026-02-26 23:25:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=23 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=1 trades_ok=False
+[2026-02-26 23:25:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=24 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=2 trades_ok=False
+[2026-02-26 23:25:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=25 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=3 trades_ok=False
+[2026-02-26 23:25:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=26 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=4 trades_ok=False
+[2026-02-26 23:25:44] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=27 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=5 trades_ok=False
+[2026-02-26 23:25:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=28 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=6 trades_ok=False
+[2026-02-26 23:26:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=29 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=7 trades_ok=False
+[2026-02-26 23:26:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=8 trades_ok=False
+[2026-02-26 23:26:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=31 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-9.623924 no_improve=9 trades_ok=False
+[2026-02-26 23:26:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=32 roi=-9.623924 sr=-0.334740 trades=228 metric=-9.623924 best=-9.623924 no_improve=10 trades_ok=True
+[2026-02-26 23:26:35] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=33 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=11 trades_ok=True
+[2026-02-26 23:26:44] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=34 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=12 trades_ok=True
+[2026-02-26 23:26:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=35 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=13 trades_ok=True
+[2026-02-26 23:27:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=36 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=14 trades_ok=True
+[2026-02-26 23:27:09] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=37 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=15 trades_ok=True
+[2026-02-26 23:27:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=38 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=16 trades_ok=True
+[2026-02-26 23:27:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=39 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=17 trades_ok=True
+[2026-02-26 23:27:35] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=40 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=18 trades_ok=True
+[2026-02-26 23:27:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a30_o16 variant=policy_gradient method=proposed ep=41 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-9.623924 no_improve=19 trades_ok=True
+[2026-02-26 23:27:43] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a30_o16 reason=early_stop ep=41
+[2026-02-26 23:27:46] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a30_o16 reason=early_stop episodes=41
+[2026-02-26 23:27:46] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_policy_gradient_a30_o16 (reason=early_stop, best=-9.623924)
+[2026-02-26 23:27:46] [MainPipeline] [INFO] [PHASE C/D] Running batch 4: jobs=1
+[2026-02-26 23:28:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=1 roi=-20.922223 sr=-0.349302 trades=684 metric=-20.922223 best=nan no_improve=0 trades_ok=True
+[2026-02-26 23:29:35] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-20.922223 no_improve=0 trades_ok=False
+[2026-02-26 23:30:30] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-20.922223 no_improve=1 trades_ok=False
+[2026-02-26 23:31:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=4 roi=-4.016067 sr=-0.467763 trades=306 metric=-4.016067 best=-20.922223 no_improve=2 trades_ok=True
+[2026-02-26 23:32:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-4.016067 no_improve=0 trades_ok=False
+[2026-02-26 23:33:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=6 roi=-16.713144 sr=-0.161837 trades=378 metric=-16.713144 best=-4.016067 no_improve=1 trades_ok=True
+[2026-02-26 23:34:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=7 roi=-6.515041 sr=-0.242714 trades=119 metric=-6.515041 best=-4.016067 no_improve=2 trades_ok=True
+[2026-02-26 23:35:09] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=8 roi=-0.092007 sr=-0.064259 trades=6 metric=-0.092007 best=-4.016067 no_improve=3 trades_ok=False
+[2026-02-26 23:36:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=9 roi=-0.859249 sr=-0.209397 trades=65 metric=-0.859249 best=-4.016067 no_improve=4 trades_ok=True
+[2026-02-26 23:37:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=10 roi=-0.359519 sr=-0.135758 trades=28 metric=-0.359519 best=-0.859249 no_improve=0 trades_ok=True
+[2026-02-26 23:37:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=11 roi=-19.606059 sr=-0.308212 trades=598 metric=-19.606059 best=-0.359519 no_improve=0 trades_ok=True
+[2026-02-26 23:38:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=12 roi=-0.077108 sr=-0.052190 trades=4 metric=-0.077108 best=-0.359519 no_improve=1 trades_ok=False
+[2026-02-26 23:39:48] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=13 roi=-0.104919 sr=-0.037320 trades=2 metric=-0.104919 best=-0.359519 no_improve=2 trades_ok=False
+[2026-02-26 23:40:44] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=14 roi=-14.464854 sr=0.089077 trades=140 metric=-14.464854 best=-0.359519 no_improve=3 trades_ok=True
+[2026-02-26 23:41:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=15 roi=-5.761900 sr=-0.554489 trades=418 metric=-5.761900 best=-0.359519 no_improve=4 trades_ok=True
+[2026-02-26 23:42:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=16 roi=-0.085792 sr=-0.063732 trades=6 metric=-0.085792 best=-0.359519 no_improve=5 trades_ok=False
+[2026-02-26 23:43:31] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=17 roi=-0.243604 sr=-0.064693 trades=6 metric=-0.243604 best=-0.359519 no_improve=6 trades_ok=False
+[2026-02-26 23:44:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=18 roi=-4.551881 sr=-0.488661 trades=331 metric=-4.551881 best=-0.359519 no_improve=7 trades_ok=True
+[2026-02-26 23:45:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=19 roi=-19.273974 sr=-0.337519 trades=594 metric=-19.273974 best=-0.359519 no_improve=8 trades_ok=True
+[2026-02-26 23:46:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=20 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.359519 no_improve=9 trades_ok=False
+[2026-02-26 23:47:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=21 roi=-0.653475 sr=-0.128036 trades=57 metric=-0.653475 best=-0.359519 no_improve=10 trades_ok=True
+[2026-02-26 23:48:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=22 roi=-0.104919 sr=-0.037320 trades=2 metric=-0.104919 best=-0.359519 no_improve=11 trades_ok=False
+[2026-02-26 23:49:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=23 roi=-12.470760 sr=0.074288 trades=273 metric=-12.470760 best=-0.359519 no_improve=12 trades_ok=True
+[2026-02-26 23:50:03] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=24 roi=-15.945730 sr=-0.179702 trades=418 metric=-15.945730 best=-0.359519 no_improve=13 trades_ok=True
+[2026-02-26 23:50:59] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=25 roi=-10.456098 sr=0.161711 trades=185 metric=-10.456098 best=-0.359519 no_improve=14 trades_ok=True
+[2026-02-26 23:51:55] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=26 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.359519 no_improve=15 trades_ok=False
+[2026-02-26 23:52:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=27 roi=-0.069808 sr=-0.064621 trades=6 metric=-0.069808 best=-0.359519 no_improve=16 trades_ok=False
+[2026-02-26 23:53:46] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=28 roi=-6.129923 sr=-0.561928 trades=446 metric=-6.129923 best=-0.359519 no_improve=17 trades_ok=True
+[2026-02-26 23:54:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=29 roi=-3.949363 sr=-0.452166 trades=300 metric=-3.949363 best=-0.359519 no_improve=18 trades_ok=True
+[2026-02-26 23:55:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a55_o16 variant=paper method=classic ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.359519 no_improve=19 trades_ok=False
+[2026-02-26 23:55:39] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a55_o16 reason=early_stop ep=30
+[2026-02-26 23:55:41] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a55_o16 reason=early_stop episodes=30
+[2026-02-26 23:55:41] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a55_o16 (reason=early_stop, best=-0.359519)
+[2026-02-26 23:55:41] [MainPipeline] [INFO] [PHASE C/D] Running batch 5: jobs=1
+[2026-02-26 23:56:35] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=1 roi=1.344949 sr=-0.150863 trades=48 metric=1.344949 best=nan no_improve=0 trades_ok=True
+[2026-02-26 23:57:31] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=2 roi=1.344949 sr=-0.150863 trades=48 metric=1.344949 best=1.344949 no_improve=0 trades_ok=True
+[2026-02-26 23:58:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=3 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.344949 no_improve=1 trades_ok=True
+[2026-02-26 23:59:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=1.344949 no_improve=2 trades_ok=False
+[2026-02-27 00:00:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=5 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=1.344949 no_improve=3 trades_ok=True
+[2026-02-27 00:01:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=6 roi=3.789054 sr=0.205075 trades=78 metric=3.789054 best=3.516170 no_improve=0 trades_ok=True
+[2026-02-27 00:02:11] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=7 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.789054 no_improve=0 trades_ok=True
+[2026-02-27 00:03:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=8 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.789054 no_improve=1 trades_ok=True
+[2026-02-27 00:04:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=9 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.789054 no_improve=2 trades_ok=True
+[2026-02-27 00:05:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=10 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=3.789054 no_improve=3 trades_ok=False
+[2026-02-27 00:05:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=11 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.789054 no_improve=4 trades_ok=True
+[2026-02-27 00:06:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=12 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=3.789054 no_improve=5 trades_ok=False
+[2026-02-27 00:07:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=13 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.789054 no_improve=6 trades_ok=True
+[2026-02-27 00:08:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=14 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.789054 no_improve=7 trades_ok=True
+[2026-02-27 00:09:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=15 roi=6.461683 sr=0.199092 trades=96 metric=6.461683 best=3.789054 no_improve=8 trades_ok=True
+[2026-02-27 00:10:37] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=16 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=0 trades_ok=True
+[2026-02-27 00:11:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=17 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=1 trades_ok=True
+[2026-02-27 00:12:29] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=18 roi=5.063204 sr=0.191424 trades=78 metric=5.063204 best=6.461683 no_improve=2 trades_ok=True
+[2026-02-27 00:13:25] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=19 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=6.461683 no_improve=3 trades_ok=True
+[2026-02-27 00:14:21] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=20 roi=5.063204 sr=0.191424 trades=78 metric=5.063204 best=6.461683 no_improve=4 trades_ok=True
+[2026-02-27 00:15:17] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=21 roi=5.063204 sr=0.191424 trades=78 metric=5.063204 best=6.461683 no_improve=5 trades_ok=True
+[2026-02-27 00:16:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=22 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=6 trades_ok=True
+[2026-02-27 00:17:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=23 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=7 trades_ok=True
+[2026-02-27 00:18:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=24 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=8 trades_ok=True
+[2026-02-27 00:19:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=25 roi=5.063204 sr=0.191424 trades=78 metric=5.063204 best=6.461683 no_improve=9 trades_ok=True
+[2026-02-27 00:19:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=26 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=10 trades_ok=True
+[2026-02-27 00:20:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=27 roi=5.063204 sr=0.191424 trades=78 metric=5.063204 best=6.461683 no_improve=11 trades_ok=True
+[2026-02-27 00:21:48] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=28 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=12 trades_ok=True
+[2026-02-27 00:22:44] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=29 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=13 trades_ok=True
+[2026-02-27 00:23:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=30 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=14 trades_ok=True
+[2026-02-27 00:24:37] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=31 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=15 trades_ok=True
+[2026-02-27 00:25:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=32 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=16 trades_ok=True
+[2026-02-27 00:26:29] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=33 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=17 trades_ok=True
+[2026-02-27 00:27:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=34 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=18 trades_ok=True
+[2026-02-27 00:28:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a55_o16 variant=paper method=proposed ep=35 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=6.461683 no_improve=19 trades_ok=True
+[2026-02-27 00:28:22] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a55_o16 reason=early_stop ep=35
+[2026-02-27 00:28:24] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a55_o16 reason=early_stop episodes=35
+[2026-02-27 00:28:24] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a55_o16 (reason=early_stop, best=6.461683)
+[2026-02-27 00:28:24] [MainPipeline] [INFO] [PHASE C/D] Running batch 6: jobs=1
+[2026-02-27 00:28:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=1 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=nan no_improve=0 trades_ok=True
+[2026-02-27 00:28:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=2 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=0 trades_ok=True
+[2026-02-27 00:28:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=3 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=1 trades_ok=True
+[2026-02-27 00:28:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=4 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=2 trades_ok=True
+[2026-02-27 00:29:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=5 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=3 trades_ok=True
+[2026-02-27 00:29:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=6 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=4 trades_ok=True
+[2026-02-27 00:29:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=7 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=5 trades_ok=True
+[2026-02-27 00:29:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=8 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=6 trades_ok=True
+[2026-02-27 00:29:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=9 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=1.062684 no_improve=7 trades_ok=True
+[2026-02-27 00:29:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=10 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=1.062684 no_improve=8 trades_ok=True
+[2026-02-27 00:29:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=11 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.516170 no_improve=0 trades_ok=True
+[2026-02-27 00:30:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=12 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.516170 no_improve=1 trades_ok=True
+[2026-02-27 00:30:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=13 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.516170 no_improve=2 trades_ok=True
+[2026-02-27 00:30:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=14 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.516170 no_improve=3 trades_ok=True
+[2026-02-27 00:30:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=15 roi=3.516170 sr=0.144419 trades=78 metric=3.516170 best=3.516170 no_improve=4 trades_ok=True
+[2026-02-27 00:30:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=16 roi=0.579803 sr=-0.083818 trades=48 metric=0.579803 best=3.516170 no_improve=5 trades_ok=True
+[2026-02-27 00:30:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=17 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=6 trades_ok=True
+[2026-02-27 00:30:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=18 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=7 trades_ok=True
+[2026-02-27 00:31:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=19 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=8 trades_ok=True
+[2026-02-27 00:31:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=20 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=9 trades_ok=True
+[2026-02-27 00:31:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=21 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=10 trades_ok=True
+[2026-02-27 00:31:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=22 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=11 trades_ok=True
+[2026-02-27 00:31:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=23 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=12 trades_ok=True
+[2026-02-27 00:31:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=24 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=13 trades_ok=True
+[2026-02-27 00:31:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=25 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=14 trades_ok=True
+[2026-02-27 00:32:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=26 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=15 trades_ok=True
+[2026-02-27 00:32:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=27 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=16 trades_ok=True
+[2026-02-27 00:32:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=28 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=17 trades_ok=True
+[2026-02-27 00:32:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=29 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=18 trades_ok=True
+[2026-02-27 00:32:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a55_o16 variant=policy_gradient method=proposed ep=30 roi=1.062684 sr=-0.106074 trades=39 metric=1.062684 best=3.516170 no_improve=19 trades_ok=True
+[2026-02-27 00:32:40] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a55_o16 reason=early_stop ep=30
+[2026-02-27 00:32:43] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a55_o16 reason=early_stop episodes=30
+[2026-02-27 00:32:43] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_policy_gradient_a55_o16 (reason=early_stop, best=3.516170)
+[2026-02-27 00:32:43] [MainPipeline] [INFO] [PHASE C/D] Running batch 7: jobs=1
+[2026-02-27 00:33:37] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=1 roi=-14.098017 sr=0.057675 trades=275 metric=-14.098017 best=nan no_improve=0 trades_ok=True
+[2026-02-27 00:34:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=2 roi=-12.159079 sr=0.081925 trades=155 metric=-12.159079 best=-14.098017 no_improve=0 trades_ok=True
+[2026-02-27 00:35:29] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-12.159079 no_improve=0 trades_ok=False
+[2026-02-27 00:36:25] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=4 roi=-20.824631 sr=-0.453176 trades=506 metric=-20.824631 best=-12.159079 no_improve=1 trades_ok=True
+[2026-02-27 00:37:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-12.159079 no_improve=2 trades_ok=False
+[2026-02-27 00:38:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=6 roi=-0.026700 sr=-0.037320 trades=2 metric=-0.026700 best=-12.159079 no_improve=3 trades_ok=False
+[2026-02-27 00:39:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=7 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-12.159079 no_improve=4 trades_ok=False
+[2026-02-27 00:40:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-12.159079 no_improve=5 trades_ok=False
+[2026-02-27 00:41:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=9 roi=-6.727761 sr=-0.597506 trades=480 metric=-6.727761 best=-12.159079 no_improve=6 trades_ok=True
+[2026-02-27 00:42:03] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=10 roi=-8.342211 sr=-0.505984 trades=511 metric=-8.342211 best=-6.727761 no_improve=0 trades_ok=True
+[2026-02-27 00:43:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=11 roi=-14.245634 sr=0.118199 trades=161 metric=-14.245634 best=-6.727761 no_improve=1 trades_ok=True
+[2026-02-27 00:43:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=12 roi=-6.929901 sr=0.066718 trades=86 metric=-6.929901 best=-6.727761 no_improve=2 trades_ok=True
+[2026-02-27 00:44:52] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=13 roi=-12.131725 sr=-0.074796 trades=111 metric=-12.131725 best=-6.727761 no_improve=3 trades_ok=True
+[2026-02-27 00:45:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=14 roi=-10.395784 sr=-0.064730 trades=114 metric=-10.395784 best=-6.727761 no_improve=4 trades_ok=True
+[2026-02-27 00:46:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-6.727761 no_improve=5 trades_ok=False
+[2026-02-27 00:47:42] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=16 roi=-0.687957 sr=-0.183810 trades=54 metric=-0.687957 best=-6.727761 no_improve=6 trades_ok=True
+[2026-02-27 00:48:38] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=17 roi=-1.918079 sr=-0.320611 trades=151 metric=-1.918079 best=-0.687957 no_improve=0 trades_ok=True
+[2026-02-27 00:49:34] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=18 roi=-2.750332 sr=-0.389270 trades=214 metric=-2.750332 best=-0.687957 no_improve=1 trades_ok=True
+[2026-02-27 00:50:31] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=19 roi=-1.039073 sr=-0.233132 trades=82 metric=-1.039073 best=-0.687957 no_improve=2 trades_ok=True
+[2026-02-27 00:51:27] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=20 roi=-2.804582 sr=-0.019715 trades=449 metric=-2.804582 best=-0.687957 no_improve=3 trades_ok=True
+[2026-02-27 00:52:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=21 roi=-5.851033 sr=-0.242714 trades=119 metric=-5.851033 best=-0.687957 no_improve=4 trades_ok=True
+[2026-02-27 00:53:19] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=22 roi=-0.716685 sr=-0.070755 trades=126 metric=-0.716685 best=-0.687957 no_improve=5 trades_ok=True
+[2026-02-27 00:54:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=23 roi=-0.234352 sr=-0.000748 trades=62 metric=-0.234352 best=-0.687957 no_improve=6 trades_ok=True
+[2026-02-27 00:55:12] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=24 roi=-12.104774 sr=-0.117790 trades=585 metric=-12.104774 best=-0.234352 no_improve=0 trades_ok=True
+[2026-02-27 00:56:08] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=25 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.234352 no_improve=1 trades_ok=False
+[2026-02-27 00:57:04] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=26 roi=-6.430039 sr=-0.226207 trades=119 metric=-6.430039 best=-0.234352 no_improve=2 trades_ok=True
+[2026-02-27 00:58:01] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=27 roi=-11.863993 sr=0.000000 trades=112 metric=-11.863993 best=-0.234352 no_improve=3 trades_ok=True
+[2026-02-27 00:58:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=28 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.234352 no_improve=4 trades_ok=False
+[2026-02-27 00:59:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=29 roi=-0.020021 sr=-0.027810 trades=4 metric=-0.020021 best=-0.234352 no_improve=5 trades_ok=False
+[2026-02-27 01:00:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=30 roi=-0.945844 sr=-0.216359 trades=72 metric=-0.945844 best=-0.234352 no_improve=6 trades_ok=True
+[2026-02-27 01:01:46] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=31 roi=-0.581629 sr=-0.153158 trades=52 metric=-0.581629 best=-0.234352 no_improve=7 trades_ok=True
+[2026-02-27 01:02:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=32 roi=-18.486030 sr=-0.452180 trades=618 metric=-18.486030 best=-0.234352 no_improve=8 trades_ok=True
+[2026-02-27 01:03:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=33 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.234352 no_improve=9 trades_ok=False
+[2026-02-27 01:04:35] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=34 roi=-6.010974 sr=0.000000 trades=44 metric=-6.010974 best=-0.234352 no_improve=10 trades_ok=True
+[2026-02-27 01:05:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=35 roi=-9.404770 sr=-0.346855 trades=715 metric=-9.404770 best=-0.234352 no_improve=11 trades_ok=True
+[2026-02-27 01:06:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=36 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-0.234352 no_improve=12 trades_ok=False
+[2026-02-27 01:07:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=37 roi=-9.725721 sr=-0.328729 trades=718 metric=-9.725721 best=-0.234352 no_improve=13 trades_ok=True
+[2026-02-27 01:08:21] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=38 roi=-0.534940 sr=-0.156163 trades=40 metric=-0.534940 best=-0.234352 no_improve=14 trades_ok=True
+[2026-02-27 01:09:17] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=39 roi=-0.935141 sr=-0.201110 trades=66 metric=-0.935141 best=-0.234352 no_improve=15 trades_ok=True
+[2026-02-27 01:10:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=40 roi=-12.519293 sr=0.015172 trades=123 metric=-12.519293 best=-0.234352 no_improve=16 trades_ok=True
+[2026-02-27 01:11:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=41 roi=-15.520151 sr=0.005017 trades=185 metric=-15.520151 best=-0.234352 no_improve=17 trades_ok=True
+[2026-02-27 01:12:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=42 roi=-7.546925 sr=0.027898 trades=149 metric=-7.546925 best=-0.234352 no_improve=18 trades_ok=True
+[2026-02-27 01:13:02] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_classic_paper_a80_o16 variant=paper method=classic ep=43 roi=-6.027606 sr=-0.495357 trades=472 metric=-6.027606 best=-0.234352 no_improve=19 trades_ok=True
+[2026-02-27 01:13:02] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a80_o16 reason=early_stop ep=43
+[2026-02-27 01:13:04] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_classic_paper_a80_o16 reason=early_stop episodes=43
+[2026-02-27 01:13:04] [MainPipeline] [INFO] [PHASE C/D] Completed main_classic_paper_a80_o16 (reason=early_stop, best=-0.234352)
+[2026-02-27 01:13:04] [MainPipeline] [INFO] [PHASE C/D] Running batch 8: jobs=1
+[2026-02-27 01:13:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=1 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=0 trades_ok=False
+[2026-02-27 01:14:54] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=2 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=1 trades_ok=False
+[2026-02-27 01:15:51] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=3 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=2 trades_ok=False
+[2026-02-27 01:16:47] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=4 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=3 trades_ok=False
+[2026-02-27 01:17:43] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=5 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=4 trades_ok=False
+[2026-02-27 01:18:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=6 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=5 trades_ok=False
+[2026-02-27 01:19:36] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=7 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=6 trades_ok=False
+[2026-02-27 01:20:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=8 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=7 trades_ok=False
+[2026-02-27 01:21:28] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=9 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=8 trades_ok=False
+[2026-02-27 01:22:25] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=10 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=nan no_improve=9 trades_ok=False
+[2026-02-27 01:23:21] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=11 roi=-13.973172 sr=-0.215822 trades=109 metric=-13.973172 best=nan no_improve=10 trades_ok=True
+[2026-02-27 01:24:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=12 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=0 trades_ok=False
+[2026-02-27 01:25:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=13 roi=-13.973172 sr=-0.215822 trades=109 metric=-13.973172 best=-13.973172 no_improve=1 trades_ok=True
+[2026-02-27 01:26:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=14 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=2 trades_ok=False
+[2026-02-27 01:27:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=15 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=3 trades_ok=False
+[2026-02-27 01:28:03] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=16 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=4 trades_ok=False
+[2026-02-27 01:29:00] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=17 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=5 trades_ok=False
+[2026-02-27 01:29:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=18 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=6 trades_ok=False
+[2026-02-27 01:30:53] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=19 roi=-13.973172 sr=-0.215822 trades=109 metric=-13.973172 best=-13.973172 no_improve=7 trades_ok=True
+[2026-02-27 01:31:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=20 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=8 trades_ok=False
+[2026-02-27 01:32:45] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=21 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=9 trades_ok=False
+[2026-02-27 01:33:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=22 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=10 trades_ok=False
+[2026-02-27 01:34:37] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=23 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=11 trades_ok=False
+[2026-02-27 01:35:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=24 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=12 trades_ok=False
+[2026-02-27 01:36:29] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=25 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=13 trades_ok=False
+[2026-02-27 01:37:26] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=26 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=14 trades_ok=False
+[2026-02-27 01:38:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=27 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=15 trades_ok=False
+[2026-02-27 01:39:18] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=28 roi=-13.973172 sr=-0.215822 trades=109 metric=-13.973172 best=-13.973172 no_improve=16 trades_ok=True
+[2026-02-27 01:40:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=29 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=17 trades_ok=False
+[2026-02-27 01:41:10] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=18 trades_ok=False
+[2026-02-27 01:42:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_paper_a80_o16 variant=paper method=proposed ep=31 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.973172 no_improve=19 trades_ok=False
+[2026-02-27 01:42:06] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a80_o16 reason=early_stop ep=31
+[2026-02-27 01:42:08] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_paper_a80_o16 reason=early_stop episodes=31
+[2026-02-27 01:42:08] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_paper_a80_o16 (reason=early_stop, best=-13.973172)
+[2026-02-27 01:42:08] [MainPipeline] [INFO] [PHASE C/D] Running batch 9: jobs=1
+[2026-02-27 01:42:16] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=1 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=nan no_improve=0 trades_ok=True
+[2026-02-27 01:42:25] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=2 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=0 trades_ok=True
+[2026-02-27 01:42:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=3 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=1 trades_ok=True
+[2026-02-27 01:42:42] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=4 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=2 trades_ok=True
+[2026-02-27 01:42:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=5 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=3 trades_ok=True
+[2026-02-27 01:42:59] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=6 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=4 trades_ok=True
+[2026-02-27 01:43:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=7 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=5 trades_ok=True
+[2026-02-27 01:43:16] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=8 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=6 trades_ok=True
+[2026-02-27 01:43:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=9 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=7 trades_ok=True
+[2026-02-27 01:43:33] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=10 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=8 trades_ok=True
+[2026-02-27 01:43:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=11 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=9 trades_ok=True
+[2026-02-27 01:43:50] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=12 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=10 trades_ok=True
+[2026-02-27 01:43:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=13 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=11 trades_ok=True
+[2026-02-27 01:44:07] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=14 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=12 trades_ok=True
+[2026-02-27 01:44:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=15 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=13 trades_ok=True
+[2026-02-27 01:44:24] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=16 roi=-18.288827 sr=-0.172043 trades=168 metric=-18.288827 best=-18.288827 no_improve=14 trades_ok=True
+[2026-02-27 01:44:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=17 roi=-13.309910 sr=-0.171956 trades=174 metric=-13.309910 best=-18.288827 no_improve=15 trades_ok=True
+[2026-02-27 01:44:41] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=18 roi=-13.309910 sr=-0.171956 trades=174 metric=-13.309910 best=-13.309910 no_improve=0 trades_ok=True
+[2026-02-27 01:44:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=19 roi=-13.309910 sr=-0.171956 trades=174 metric=-13.309910 best=-13.309910 no_improve=1 trades_ok=True
+[2026-02-27 01:44:58] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=20 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=2 trades_ok=False
+[2026-02-27 01:45:06] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=21 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=3 trades_ok=False
+[2026-02-27 01:45:15] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=22 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=4 trades_ok=False
+[2026-02-27 01:45:23] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=23 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=5 trades_ok=False
+[2026-02-27 01:45:32] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=24 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=6 trades_ok=False
+[2026-02-27 01:45:40] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=25 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=7 trades_ok=False
+[2026-02-27 01:45:49] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=26 roi=-0.168449 sr=-0.111244 trades=18 metric=-0.168449 best=-13.309910 no_improve=8 trades_ok=False
+[2026-02-27 01:45:57] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=27 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=9 trades_ok=False
+[2026-02-27 01:46:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=28 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=10 trades_ok=False
+[2026-02-27 01:46:14] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=29 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=11 trades_ok=False
+[2026-02-27 01:46:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=30 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=12 trades_ok=False
+[2026-02-27 01:46:31] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=31 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=13 trades_ok=False
+[2026-02-27 01:46:39] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=32 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=14 trades_ok=False
+[2026-02-27 01:46:48] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=33 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=15 trades_ok=False
+[2026-02-27 01:46:56] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=34 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=16 trades_ok=False
+[2026-02-27 01:47:05] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=35 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=17 trades_ok=False
+[2026-02-27 01:47:13] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=36 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=18 trades_ok=False
+[2026-02-27 01:47:22] [MainDQNTrain] [INFO] [MAIN-EVAL] job=main_proposed_policy_gradient_a80_o16 variant=policy_gradient method=proposed ep=37 roi=0.000000 sr=0.000000 trades=0 metric=0.000000 best=-13.309910 no_improve=19 trades_ok=False
+[2026-02-27 01:47:22] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a80_o16 reason=early_stop ep=37
+[2026-02-27 01:47:24] [MainDQNTrain] [INFO] [MAIN-STOP] job=main_proposed_policy_gradient_a80_o16 reason=early_stop episodes=37
+[2026-02-27 01:47:24] [MainPipeline] [INFO] [PHASE C/D] Completed main_proposed_policy_gradient_a80_o16 (reason=early_stop, best=-13.309910)
+[2026-02-27 01:47:24] [MainPipeline] [INFO] [PHASE C/D] Finished with status: {'stage': 'main', 'elapsed_sec': 12245.510543046985, 'budget_sec': 21600.0, 'stopped_reason': 'completed'}
+[2026-02-27 01:47:24] [MainPipeline] [INFO] [PHASE E] Generating tables/plots/reports
+[2026-02-27 01:47:25] [MainPipeline] [INFO] [PHASE E] Finished with status: {'stage': 'eval', 'elapsed_sec': 1.2065272717736661, 'budget_sec': 1800.0, 'stopped_reason': 'completed'}
+[2026-02-27 01:47:25] [MainPipeline] [INFO] Pipeline completed. Deadline report: /home/grupo1/BTCAgent/results/20260227_001839/deadline_report_run_20260227_013925.md

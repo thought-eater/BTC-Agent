@@ -1,0 +1,250 @@
+{
+  "jobs": {
+    "trade": {
+      "elapsed_sec": 700.6762870401144,
+      "budget_sec": 5400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": 8103.93994140625,
+      "checkpoint_path": "utils/checkpoints/trade_dqn.weights.h5",
+      "episodes_completed": 124,
+      "metrics": {
+        "train_reward": 8103.93994140625,
+        "x1_nunique": 3,
+        "x1_std": 0.8373157382011414,
+        "collapsed_output": false
+      },
+      "job_id": "trade",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T01:40:15.039847Z",
+      "finished_at": "2026-02-27T01:51:55.716147Z",
+      "is_deadline_eligible": true
+    },
+    "pred_paper": {
+      "elapsed_sec": 5482.728695245925,
+      "budget_sec": 5400.0,
+      "stopped_reason": "time_budget",
+      "best_metric": -32383.491656693972,
+      "checkpoint_path": "utils/checkpoints/predictive_dqn.weights.h5",
+      "episodes_completed": 49,
+      "metrics": {
+        "train_reward": -32383.491656693972,
+        "output_path": "data/processed/x2_price_predictions.csv",
+        "x2_nunique": 6,
+        "x2_std": 22.16112973344867,
+        "collapsed_output": false
+      },
+      "job_id": "pred_paper",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T01:51:55.773914Z",
+      "finished_at": "2026-02-27T03:23:18.502621Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a30_o16": {
+      "elapsed_sec": 2402.0702623538673,
+      "budget_sec": 2400.0,
+      "stopped_reason": "time_budget",
+      "best_metric": -0.3485021120605408,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha30_omega16.weights.h5",
+      "episodes_completed": 43,
+      "metrics": {
+        "roi": -0.3485021120605408,
+        "sr": -0.120612782305464,
+        "trades": 26.0,
+        "final_cash": 996514.9788793946,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a30_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T03:23:18.863197Z",
+      "finished_at": "2026-02-27T04:03:20.933339Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a30_o16": {
+      "elapsed_sec": 1113.5722801983356,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": 0.0,
+      "checkpoint_path": null,
+      "episodes_completed": 20,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a30_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T04:03:20.960457Z",
+      "finished_at": "2026-02-27T04:21:54.532612Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_policy_gradient_a30_o16": {
+      "elapsed_sec": 351.6429932275787,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": -9.623923775878932,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_policy_gradient_alpha30_omega16.weights.h5",
+      "episodes_completed": 41,
+      "metrics": {
+        "roi": -18.288827103515658,
+        "sr": -0.17204292477968305,
+        "trades": 168.0,
+        "final_cash": 817111.7289648434,
+        "alpha": 0.3,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "policy_gradient"
+      },
+      "job_id": "main_proposed_policy_gradient_a30_o16",
+      "variant_id": "policy_gradient",
+      "started_at": "2026-02-27T04:21:54.558108Z",
+      "finished_at": "2026-02-27T04:27:46.200986Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a55_o16": {
+      "elapsed_sec": 1675.2693495783024,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": -0.35951859423831334,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha55_omega16.weights.h5",
+      "episodes_completed": 30,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.55,
+        "omega": 16,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a55_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T04:27:46.208387Z",
+      "finished_at": "2026-02-27T04:55:41.477611Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a55_o16": {
+      "elapsed_sec": 1962.837589087896,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": 6.461683024169901,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha55_omega16.weights.h5",
+      "episodes_completed": 35,
+      "metrics": {
+        "roi": 3.5161696467284926,
+        "sr": 0.1444187788424004,
+        "trades": 78.0,
+        "final_cash": 1035161.6964672849,
+        "alpha": 0.55,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a55_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T04:55:41.506241Z",
+      "finished_at": "2026-02-27T05:28:24.343707Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_policy_gradient_a55_o16": {
+      "elapsed_sec": 258.73436852684245,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": 3.5161696467284926,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_policy_gradient_alpha55_omega16.weights.h5",
+      "episodes_completed": 30,
+      "metrics": {
+        "roi": 1.0626836140136466,
+        "sr": -0.10607430455676402,
+        "trades": 39.0,
+        "final_cash": 1010626.8361401365,
+        "alpha": 0.55,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "policy_gradient"
+      },
+      "job_id": "main_proposed_policy_gradient_a55_o16",
+      "variant_id": "policy_gradient",
+      "started_at": "2026-02-27T05:28:24.369927Z",
+      "finished_at": "2026-02-27T05:32:43.104172Z",
+      "is_deadline_eligible": true
+    },
+    "main_classic_paper_a80_o16": {
+      "elapsed_sec": 2421.4971844968386,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": -0.23435232104491444,
+      "checkpoint_path": "utils/checkpoints/main_dqn_classic_paper_alpha80_omega16.weights.h5",
+      "episodes_completed": 43,
+      "metrics": {
+        "roi": -6.0276061362304265,
+        "sr": -0.4953566618804773,
+        "trades": 472.0,
+        "final_cash": 939723.9386376957,
+        "alpha": 0.8,
+        "omega": 16,
+        "method": "classic",
+        "variant_id": "paper"
+      },
+      "job_id": "main_classic_paper_a80_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T05:32:43.110492Z",
+      "finished_at": "2026-02-27T06:13:04.607539Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_paper_a80_o16": {
+      "elapsed_sec": 1743.5375080420636,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": -13.973172057128908,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_paper_alpha80_omega16.weights.h5",
+      "episodes_completed": 31,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.8,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "paper"
+      },
+      "job_id": "main_proposed_paper_a80_o16",
+      "variant_id": "paper",
+      "started_at": "2026-02-27T06:13:04.633933Z",
+      "finished_at": "2026-02-27T06:42:08.171325Z",
+      "is_deadline_eligible": true
+    },
+    "main_proposed_policy_gradient_a80_o16": {
+      "elapsed_sec": 316.16773711238056,
+      "budget_sec": 2400.0,
+      "stopped_reason": "early_stop",
+      "best_metric": -13.309910139648428,
+      "checkpoint_path": "utils/checkpoints/main_dqn_proposed_policy_gradient_alpha80_omega16.weights.h5",
+      "episodes_completed": 37,
+      "metrics": {
+        "roi": 0.0,
+        "sr": 0.0,
+        "trades": 0.0,
+        "final_cash": 1000000.0,
+        "alpha": 0.8,
+        "omega": 16,
+        "method": "proposed",
+        "variant_id": "policy_gradient"
+      },
+      "job_id": "main_proposed_policy_gradient_a80_o16",
+      "variant_id": "policy_gradient",
+      "started_at": "2026-02-27T06:42:08.199650Z",
+      "finished_at": "2026-02-27T06:47:24.367270Z",
+      "is_deadline_eligible": true
+    }
+  }
+}

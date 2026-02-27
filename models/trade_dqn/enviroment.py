@@ -10,11 +10,14 @@ class TradeDQNEnvironment:
         self.buy_penalty_limit = buy_penalty_limit
         self.reset()
 
-    def reset(self):
-        self.idx = 0
+    def reset(self, start_idx: int = 0, episode_max_steps: int | None = None):
+        start_idx = int(max(0, min(start_idx, len(self.prices) - 2)))
+        self.idx = start_idx
         self.last_buy_price = None
         self.hold_streak = 0
         self.buy_streak = 0
+        self.episode_max_steps = int(episode_max_steps) if episode_max_steps is not None else None
+        self.episode_steps = 0
         return self._state()
 
     def _state(self):
@@ -46,6 +49,9 @@ class TradeDQNEnvironment:
                 self.last_buy_price = None
 
         self.idx += 1
+        self.episode_steps += 1
         done = self.idx >= len(self.prices) - 1
+        if self.episode_max_steps is not None and self.episode_steps >= self.episode_max_steps:
+            done = True
         next_state = self._state() if not done else np.array([round(price, 2)], dtype=np.float32)
         return next_state, float(reward), done, {}

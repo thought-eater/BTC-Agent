@@ -81,6 +81,8 @@ class StopConfig:
     early_stop_patience: int
     min_improvement_delta: float
     early_stop_metric: str = "roi"
+    min_episodes_before_early_stop: int = 1
+    min_trades_for_best: int = 0
 
 
 @dataclass
